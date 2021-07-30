@@ -1,0 +1,49 @@
+{% extends layout.html %}
+{% block title %}Employee List{% endblock %}
+{% block title %}Employee List{% endblock %}
+
+{% block content %}
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Surname
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Tel
+                </th>
+                <th>
+                    Start Date
+                </th>
+                <th>
+                    Active
+                </th>
+                <th>
+                    Code
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% foreach($people as $person): %}
+           
+            <tr>
+                <td>{{ $person['first_name'] }}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            {% endforeach; %}
+        </tbody>
+    </table>   
+{% endblock %}

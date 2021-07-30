@@ -1,0 +1,21 @@
+# Set all the file types PHP should parse
+AddHandler php-script .php .php5 .php4 .php3 .phtml
+
+RewriteEngine On
+
+# Remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R] # <- for test, for prod use [L,R=301]
+
+# Send all request to the index file
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]*)(.*)$ index.php?controller=$1&action=$2&params=$3 [QSA]
+
+# Enable Error Documents
+ErrorDocument 400 system/views/400.html
+ErrorDocument 401 system/views/401.html
+ErrorDocument 402 system/views/402.html
+ErrorDocument 403 system/views/403.html
+ErrorDocument 404 system/views/404.html
+ErrorDocument 500 system/views/500.html
