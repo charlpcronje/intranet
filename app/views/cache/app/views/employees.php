@@ -48,17 +48,17 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach($people as $person): ?>
+            <?php foreach($employees as $person): ?>
            
             <tr>
                 <td><?php echo $person['first_name'] ?></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><?php echo $person['surname'] ?></td>
+                <td><?php echo $person['email'] ?></td>
+                <td><?php echo $person['contact_number'] ?></td>
+                <td><?php echo $person['start_date'] ?></td>
+                <td><?php echo $person['active'] ?></td>
+                <td><?php echo $person['employee_code'] ?></td>
+                <td><a href="employee/edit/<?php echo $person['id'] ?>">Edit</a>/td>
             </tr>
             <?php endforeach; ?>
         </tbody>
