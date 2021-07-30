@@ -14,8 +14,8 @@ class EmployeeController extends Controller {
     }
 
     public function edit($id) {
-        $this->render('employees.html',[
-           'employees' => new Employee(null,true)
+        $this->render('editEmployee.html',[
+           'employee' => new Employee($id)
         ]);
     }
 }
