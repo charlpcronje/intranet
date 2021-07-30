@@ -20,6 +20,22 @@ body {
             color:white;
             font-size:20px;
         }
+        main {
+            table {
+                width: 100%;
+                background-color: #FAFAFA;
+                border-collapse: collapse;
+                border: 1px solid #333;
+                td {
+                    padding: 3px;
+                    border-collapse: collapse;
+                    border: 1px solid #333;
+                    a {
+                        color: #000;
+                    }
+                }
+            }
+        }
     }
 
     nav {

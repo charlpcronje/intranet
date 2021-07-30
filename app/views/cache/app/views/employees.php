@@ -58,7 +58,7 @@
                 <td><?php echo $person['start_date'] ?></td>
                 <td><?php echo $person['active'] ?></td>
                 <td><?php echo $person['employee_code'] ?></td>
-                <td><a href="employee/edit/<?php echo $person['id'] ?>">Edit</a>/td>
+                <td><a href="employee/edit/<?php echo $person['id'] ?>">Edit</a></td>
             </tr>
             <?php endforeach; ?>
         </tbody>

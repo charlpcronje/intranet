@@ -24,6 +24,22 @@ body #wrapper a {
   font-size: 20px;
 }
 
+body #wrapper main table {
+  width: 100%;
+  background-color: #FAFAFA;
+  border-collapse: collapse;
+  border: 1px solid #333;
+}
+
+body #wrapper main table td {
+  border-collapse: collapse;
+  border: 1px solid #333;
+}
+
+body #wrapper main table td a {
+  color: #000;
+}
+
 body nav .top {
   overflow: hidden;
   background-color: #333;
