@@ -15,16 +15,16 @@ class Application {
     }
 
     public function getAction($default = 'render') {
+        $action = explode('/',$_GET['action'],1)[0];
         if(isset($_GET['action'])) {
-            return str_replace('/','',$_GET['action']);
+            return str_replace('/','',$action);
         }
         return $default;
     }
 
     public function getParams($default = null) {
-        if(isset($_GET['params'])) {
-            return explode('/',$_GET['params']);
-        }
+        $params = explode('/',$_GET['action'],1)[1];
+        print_r(params);
         return $default;
     }
 
@@ -34,6 +34,7 @@ class Application {
         $controllerName = $this->getController();
         $actionName = $this->getAction();
         $params = $this->getParams();
+        pd($actionName);
         $ucController = ucfirst($controllerName);
         $controllerNameAll = $this->appNamespace . '\\' . $ucController . 'Controller';
         $controller = new $controllerNameAll();
