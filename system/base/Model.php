@@ -57,7 +57,7 @@ class Model implements IteratorAggregate {
 
     public function fetchAll() {
         $this->items = [];
-        $this->items = $this->db->fetchAllObj();
+        $this->items = $this->db->fetchAll();
     }
 
     public function append($data = []) {
@@ -65,7 +65,7 @@ class Model implements IteratorAggregate {
     }
 
     public function getIterator() {
-        yield from $this->data;
+        yield from $this->items;
     }
 
     // public function getIterator(){

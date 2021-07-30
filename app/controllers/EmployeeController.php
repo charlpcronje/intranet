@@ -9,8 +9,8 @@ class EmployeeController extends Controller {
 
     public function view() {
         $employees = new Employee(null,true);
-        $this->render('employees.html','app',[
-            'people' => $employees
-        ]);   
+        $this->render('employees.html',[
+           'people' => $employees
+        ]);
     }
 }

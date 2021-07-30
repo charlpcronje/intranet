@@ -17,7 +17,7 @@ class Controller {
         return json_encode($data);
     }
 
-    public function render($view) {
-        return View::render((string)$view);
+    public function render($view,$data) {
+        return View::render((string)$view,$data);
     }
 }

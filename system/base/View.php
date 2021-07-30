@@ -11,10 +11,10 @@ class View {
      * @param array $data
      * @return void
      */
-	static function render($file,$ns = 'app',$data = []) {
-		self::$ns = $ns;
+	static function render($file,$data = []) {
+		self::$ns = 'app';
 		if (strlen($file) > 0) {
-			$file = $ns.DS.'views'.DS.$file;
+			$file = self::$ns.DS.'views'.DS.$file;
 			$cachedFile = self::cache($file);
 			extract($data, EXTR_SKIP);
 			require $cachedFile;
