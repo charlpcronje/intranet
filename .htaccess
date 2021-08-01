@@ -10,7 +10,12 @@ RewriteRule ^(.*)/$ /$1 [L,R] # <- for test, for prod use [L,R=301]
 # Send all request to the index file
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^/]*)(.*)$ index.php?controller=$1&action=$2&params=$3 [QSA]
+RewriteRule ^([^/]*)/([^/]*)/(.*)$ index.php?controller=$1&action=$2&params=$3 [QSA]
+
+# To make it so the rewrite rule only matches if the first level of the URL consists of two characters do:
+# RewriteRule ^([a-zA-Z]{2})/([^/]+)/(.+)$ index.php?p1=$1&p2=$2&p3=$3
+# You can also do it for the unknown length implementation so:
+# RewriteRule ^[a-zA-Z]{2}/ index.php?path=$0
 
 # Enable Error Documents
 ErrorDocument 400 system/views/400.html
