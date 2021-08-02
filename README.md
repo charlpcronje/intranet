@@ -6,12 +6,53 @@ Path to Intranet: `\\172.29.0.29\www\html\intranet`
 
 
 ## Code Lifecycle
-> Index.php`
-- Declare and Parse environment variables `.env` file in the root
-- Declare some constants for debuging
-  - Error Reporting On/Off
-- Parse .env in root for 
+The entire `MVC` system runs in the `system` namespace. Then I created more namespaces within system to be consistent with the folder structure.
+I created some handy constants immediately like `DS` - Short for DIRECTORY_SEPARATOR because Linux and Windows have different characters for separating directories, not safe to just use `/` 
 
+
+> `index.php` _ns: root_
+```apache
+Declare and Parse environment variables `.env` file in the root
+```
+---
+
+> `system/extensions/env/init.php` _ns: system\extensions\env_
+```apache
+Parses .env file in the `root`
+```
+---
+
+> `system/constants.php`
+```apache
+- Declare some constants for debuging
+  - Display Errors On/Off
+  - Error Reporting On/Off
+  - Log Errors On/Off
+  - Error Log Path
+```
+
+> `system/bootstrap` _ns: system_
+```apache
+- includes the rest of the files required to run MVC
+  - General Helper with handy functions for global use
+  - Request Helper for handling $_GET and $_POST super globals
+  - Exception Handler that registers a function to catch all errors
+  - Base Data Singleton Class that keeps all data in a central, always consistent place. This can be accessed from any controller by using $this->set and $this->get and it uses a custom dot notation:
+    - person.hobbies:0.hobbyName Equal to $person->hobbies[0]->hobbyName
+    - employee.name would contain the employee name
+    - employee.groups would contain an array with his groups
+    - employee.groups:0.name contain group name
+  - Load Handler that autoloads all classes as they are requested and because the system has got namespaces the same as the folder structure the system alwats knows where to go look for the requested class
+  - Application that handles all incoming requests
+    - The .htaccess file has a rewrite rule that directs all traffic to the index file
+    - Every `/` caries an argument
+      - The word after the first `/` is the requested contoller
+      - The word after the second `/` is the method to be called
+      - All the rest of the `/` are arguments sent to the method
+      - This then skips the need for a router class\
+```
+Then the lifecycle ends with the `render` method that is part of the controller class that is extended by all other controllers
+The `render` method uses a small custom `templating engine` where I can create `re-usable layouts` and code `fragments` that I can `include` anywhere as needed
 
 
 ## Project Structure
