@@ -5,6 +5,15 @@ URL to intranet: `https://172.29.0.29/intranet/`
 Path to Intranet: `\\172.29.0.29\www\html\intranet`
 
 
+## Code Lifecycle
+> Index.php`
+- Declare and Parse environment variables `.env` file in the root
+- Declare some constants for debuging
+  - Error Reporting On/Off
+- Parse .env in root for 
+
+
+
 ## Project Structure
 ### Single point of entry
   
@@ -97,10 +106,10 @@ __Close the database__
 
 Specify template te render
 ```php
-View::render('layout.html');
+View::render('layout');
 ```
 
-Create a new HTML file and name it layout.html and add:
+Create a new HTML file and name it layoutreturn mixed and add:
 ```html
 <!DOCTYPE html>
 <html>
@@ -114,9 +123,9 @@ Create a new HTML file and name it layout.html and add:
 </html>
 ```
 
-Now create the index.html file and add:
+Now create the indexreturn mixed file and add:
 ```html
-{% extends layout.html %}
+{% extends layoutreturn mixed %}
 
 {% block title %}Home Page{% endblock %}
 
@@ -128,7 +137,7 @@ Now create the index.html file and add:
 
 Or the template can be called like this
 ```php
-Template::view('about.html', [
+Template::view('aboutreturn mixed', [
     'title' => 'Home Page',
     'colors' => ['red','blue','green']
 ]);
@@ -136,7 +145,7 @@ Template::view('about.html', [
 
 And then we can use it as so:
 ```html
-    {% extends layout.html %}
+    {% extends layoutreturn mixed %}
 
     {% block title %}{{ $title }}{% endblock %}
 
@@ -161,7 +170,7 @@ Extend blocks:
 
 Include additional template files:
 ```html
-{% include forms.html %}
+{% include formsreturn mixed %}
 ```
 
 If we want to remove all the compiled files we can either delete all the files in the cache directory or execute the following code:
@@ -201,3 +210,13 @@ class Employee extends Model {
 4. I added a unique index to the `employee_code` column so that there can't be duplicate `codes`
 5. I did not add any indexes to the employee_groups table becuase all `keys` / `foreign keys` are `auto indexed`
 6. I also indexed the `start_date` because of the `ordering` in the `column`
+
+## Error Pages
+I added error pages for the most of the popular errors:
+- Error `400` - Bad Request
+- Error `401` - Unauthorized (RFC 7235)
+- Error `402` - Payment Required
+- Error `403` - Forbidden
+- Error `404` - Not Found
+- Error `500` - Internal Server Error
+

@@ -29,7 +29,7 @@ class DB {
      * $user = $db->query('SELECT * FROM users WHERE username = ? AND password = ?',['test', 'test'])->fetchArray();
      * OR
      * $user = $db->query('SELECT * FROM users WHERE username = ? AND password = ?', 'test', 'test')->fetchArray();
-     * @param any $query
+     * @param mixed $query
      * @return DB
      */
     public function query($query) {
@@ -239,7 +239,7 @@ class DB {
     /**
      * gettype function
      *
-     * @param any $var
+     * @param mixed $var
      * @return void
      */
 	private function gettype($var) {

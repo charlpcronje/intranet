@@ -1,0 +1,172 @@
+[02-Aug-2021 07:21:59 Europe/Berlin] extract(): Argument #1 ($array) must be of type array, null given
+[02-Aug-2021 07:21:59 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 21
+[02-Aug-2021 07:21:59 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(21): extract(NULL, 1)
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render('index', NULL)
+#2 C:\xampp8\htdocs\intranet\app\controllers\HomeController.php(6): system\base\Controller->render('index')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(21): HomeController->__construct()
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#5 {main}
+[02-Aug-2021 07:23:07 Europe/Berlin] Cannot access protected property HomeController::$id
+[02-Aug-2021 07:23:07 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 22
+[02-Aug-2021 07:23:07 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 07:23:54 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, second array member is not a valid method
+[02-Aug-2021 07:23:54 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 07:23:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 07:24:34 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\base\Controller.php on line 28
+[02-Aug-2021 07:24:34 Europe/Berlin] PHP Warning:  file_get_contents(app\views\Array.phtml): Failed to open stream: No such file or directory in C:\xampp8\htdocs\intranet\system\base\View.php on line 110
+[02-Aug-2021 07:24:55 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\base\Controller.php on line 28
+[02-Aug-2021 07:24:55 Europe/Berlin] PHP Warning:  file_get_contents(app\views\Array.phtml): Failed to open stream: No such file or directory in C:\xampp8\htdocs\intranet\system\base\View.php on line 110
+[02-Aug-2021 07:25:54 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
+[02-Aug-2021 07:25:54 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 19
+[02-Aug-2021 07:25:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(19): strlen(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
+#2 [internal function]: system\base\Controller->render(Array)
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#5 {main}
+[02-Aug-2021 07:26:44 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
+[02-Aug-2021 07:26:44 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 20
+[02-Aug-2021 07:26:44 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(20): strlen(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
+#2 [internal function]: system\base\Controller->render(Array)
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#5 {main}
+[02-Aug-2021 07:27:23 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
+[02-Aug-2021 07:27:23 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 20
+[02-Aug-2021 07:27:23 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(20): strlen(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
+#2 [internal function]: system\base\Controller->render(Array)
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#5 {main}
+[02-Aug-2021 07:29:59 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
+[02-Aug-2021 07:29:59 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 20
+[02-Aug-2021 07:29:59 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(20): strlen(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
+#2 [internal function]: system\base\Controller->render(Array)
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#5 {main}
+[02-Aug-2021 07:30:30 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
+[02-Aug-2021 07:30:30 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 20
+[02-Aug-2021 07:30:30 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(20): strlen(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
+#2 [internal function]: system\base\Controller->render(Array)
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#5 {main}
+[02-Aug-2021 07:31:01 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
+[02-Aug-2021 07:31:01 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 20
+[02-Aug-2021 07:31:01 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(20): strlen(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
+#2 [internal function]: system\base\Controller->render(Array)
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#5 {main}
+[02-Aug-2021 07:42:55 Europe/Berlin] Class "Controller" not found
+[02-Aug-2021 07:42:55 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 07:42:55 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 07:43:25 Europe/Berlin] Class "Controller" not found
+[02-Aug-2021 07:43:25 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 07:43:25 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 07:46:58 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 07:46:58 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 07:46:58 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 07:47:04 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 07:47:04 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 07:47:04 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 07:48:23 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 07:48:23 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 07:48:23 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 07:49:48 Europe/Berlin] Class "EtestController" not found
+[02-Aug-2021 07:49:48 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 07:49:48 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 07:49:54 Europe/Berlin] Class "EtestController" not found
+[02-Aug-2021 07:49:54 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 07:49:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 07:49:58 Europe/Berlin] Class "EtestController" not found
+[02-Aug-2021 07:49:58 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 07:49:58 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 07:50:31 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method "employee"
+[02-Aug-2021 07:50:31 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 07:50:31 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 07:50:45 Europe/Berlin] PHP Warning:  file_get_contents(app\views\employees\html): Failed to open stream: No such file or directory in C:\xampp8\htdocs\intranet\system\base\View.php on line 110
+[02-Aug-2021 07:52:09 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 07:52:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 07:54:04 Europe/Berlin] syntax error, unexpected variable "$this"
+[02-Aug-2021 07:54:04 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 13
+[02-Aug-2021 07:54:04 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(99): system\handlers\LoadHandler::includeController('EmployeeControl...')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(21): system\handlers\LoadHandler::autoLoad('EmployeeControl...')
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#3 {main}
+[02-Aug-2021 07:54:11 Europe/Berlin] Cannot use object of type Employee as array
+[02-Aug-2021 07:54:11 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 12
+[02-Aug-2021 07:54:11 Europe/Berlin] #0 [internal function]: EmployeeController->view(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#3 {main}
+[02-Aug-2021 07:56:16 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 07:56:16 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:00:20 Europe/Berlin] Call to a member function set() on null
+[02-Aug-2021 08:00:20 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 12
+[02-Aug-2021 08:00:20 Europe/Berlin] #0 [internal function]: EmployeeController->view(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#3 {main}
+[02-Aug-2021 08:00:54 Europe/Berlin] Call to protected system\base\Controller::__construct() from scope system\base\Application
+[02-Aug-2021 08:00:54 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 08:00:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 08:01:17 Europe/Berlin] Cannot instantiate trait system\base\DotData
+[02-Aug-2021 08:01:17 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Controller.php - 13
+[02-Aug-2021 08:01:17 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(21): system\base\Controller->__construct()
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 08:09:39 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:09:39 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:10:59 Europe/Berlin] PHP Warning:  Undefined array key "default" in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 225
+[02-Aug-2021 08:10:59 Europe/Berlin] PHP Warning:  Undefined array key "forget" in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 227
+[02-Aug-2021 08:10:59 Europe/Berlin] PHP Warning:  Undefined array key "closureArgs" in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 228
+[02-Aug-2021 08:10:59 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:10:59 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:11:48 Europe/Berlin] PHP Warning:  Undefined array key "forget" in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 227
+[02-Aug-2021 08:11:48 Europe/Berlin] PHP Warning:  Undefined array key "closureArgs" in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 228
+[02-Aug-2021 08:11:48 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:11:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:12:25 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:12:25 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:17:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$data in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 21
+[02-Aug-2021 08:17:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$data in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 21
+[02-Aug-2021 08:19:21 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$data in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 21
+[02-Aug-2021 08:19:21 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$data in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 21
+[02-Aug-2021 08:25:06 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:25:06 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:25:08 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:25:08 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:34:15 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:34:15 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:34:17 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:34:17 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:34:17 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:34:17 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:34:37 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:34:37 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:35:04 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 08:35:04 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51

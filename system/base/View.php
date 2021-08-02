@@ -3,22 +3,50 @@ namespace system\base;
 class View {
 	static $blocks = [];
 	static $cacheEnabled = false;
-	static $ns = 'app';
+	static $ns = 'app.views';
+	static $fileExtensions = ['phtml','html','htm'];
+	static $viewExtention = 'phtml';
     /**
      * render function
      *
      * @param string $file
      * @param array $data
+	 * @param string $ns namespace of view
      * @return void
      */
 	static function render($file,$data = []) {
-		self::$ns = 'app';
-		if (strlen($file) > 0) {
-			$file = self::$ns.DS.'views'.DS.$file;
+		self::clearCache();
+		if (is_string($file) && strlen($file) > 0) {
 			$cachedFile = self::cache($file);
-			extract($data, EXTR_SKIP);
+			if (is_array($data)) {
+				extract($data, EXTR_SKIP);
+			}
 			require $cachedFile;
 		}
+	}
+
+	/**
+	 * getFileExtension of the $file sent in the argument
+	 * The is easily achieved by revering the extension and the file strings
+	 * The extension will then be at string position 0, if no file extension
+	 * was specified then it will return the default set in self::viewExtension
+	 *
+	 * @param string $file
+	 * @return string
+	 */
+	static function addFileExtension($file) {
+		foreach(self::$fileExtensions as $ext) {
+			$pos = strpos(strrev($file),strrev($ext));
+			if ($pos !== false) {
+				self::$viewExtention = $ext;
+				return $file;
+			}
+		}
+		return $file.'.'.self::$viewExtention;
+	}
+
+	static function buildFileName($file) {
+		return str_replace('.',DS,$file);
 	}
 
     /**
@@ -29,9 +57,9 @@ class View {
      */
 	static function cache($file) {
 		if (!file_exists(env('app.cache.path'))) {
-		  	mkdir(env('app.cache.path'), 0744);
+		  	mkdir(env('app.cache.path'), 0744,true);
 		}
-	    $cachedFile = env('app.cache.path') . str_replace(['/', '.html'],['_', ''], $file . '.php');
+	    $cachedFile = env('app.cache.path') . str_replace(['/', self::$viewExtention],['_', ''], $file . '.php');
 	    //if (!self::$cacheEnabled || !file_exists($cachedFile) || filemtime($cachedFile) < filemtime($file)) {
 			$code = self::includeFiles($file);
 			$code = self::compileCode($code);
@@ -47,7 +75,9 @@ class View {
      */
 	static function clearCache() {
 		foreach(glob(env('app.cache.path') . '*') as $file) {
-			unlink($file);
+			if (!is_dir($file)) {
+				unlink($file);
+			}
 		}
 	}
 
@@ -68,14 +98,15 @@ class View {
 
     /**
      * includeFiles function
-     *
+     * For the files being included in the views it will use the same namespace as the main view
+	 * unless specified differently
      * @param string $file
      * @return string
      */
 	static function includeFiles($file) {
-		if (!file_exists($file)) {
-			$file = self::$ns.DS.'views'.DS.$file;
-		}
+		$file = self::buildFileName(self::$ns.'.'.$file);
+		$file = self::addFileExtension($file);
+		
 		$code = file_get_contents($file);
 		preg_match_all('/{% ?(extends|include) ?\'?(.*?)\'? ?%}/i', $code, $matches, PREG_SET_ORDER);
 		foreach ($matches as $value) {

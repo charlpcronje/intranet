@@ -1,6 +1,10 @@
 <?php
-use core\Heepp;
-
+/**
+ * Dump and die
+ *
+ * @param mixed $var
+ * @return void
+ */
 function dd($var) {
     $callingClass = getCallingClass();
     if (empty($callingClass)) {
@@ -11,12 +15,24 @@ function dd($var) {
     die;
 }
 
+/**
+ * Vardump and Continue
+ *
+ * @param mixed $var
+ * @return void
+ */
 function ddc($var) {
     echo 'Dumping and Continue Called From: <strong>'.getCallingClass()."</strong> \r\n\r\n <br/><br/>";
     var_dump($var);
     echo '</pre>';
 }
 
+/**
+ * Print and die
+ *
+ * @param mixed $var
+ * @return void
+ */
 function pd($var) {
     $callingClass = getCallingClass();
 
@@ -31,31 +47,22 @@ function pd($var) {
     die;
 }
 
-function env($key = null,$value = null,$default = null) {
-    if (isset($value)) {
-        $_ENV[$key] = $value;
-        $_SERVER[$key] = $value;
-    }
-
-    if (!isset($key) && !isset($default)) {
-        return array_merge($_SERVER,$_ENV);
-    }
-    if (isset($_ENV[$key])) {
-        return $_ENV[$key];
-    }
-    if (isset($_SERVER[$key])) {
-        return $_SERVER[$key];
-    }
-    if (isset($default)) {
-        return $default;
-    }
-}
-
+/**
+ * fileIncludeOrigin function
+ *
+ * @return array
+ */
 function fileIncludeOrigin(){
     $traceArray = debug_backtrace();
     return array_pop($traceArray)['file'];
 }
 
+/**
+ * Print_r and die function
+ *
+ * @param mixed $var
+ * @return void
+ */
 function pdc($var) {
     $callingClass = getCallingClass();
 
@@ -68,10 +75,23 @@ function pdc($var) {
     print_r($var);
 }
 
+/**
+ * isClosure function
+ *
+ * @param mixed $var
+ * @return boolean
+ */
 function isClosure($var) {
     return is_object($var) && ($var instanceof Closure);
 }
 
+/**
+ * getMethodParams function
+ *
+ * @param string $class
+ * @param string $method
+ * @return array
+ */
 function getMethodParams($class,$method) {
     $ReflectionMethod =  new \ReflectionMethod($class, $method);
     $params = $ReflectionMethod->getParameters();
@@ -81,6 +101,12 @@ function getMethodParams($class,$method) {
     return $paramNames;
 }
 
+/**
+ * getFunctionParams function
+ *
+ * @param string $function
+ * @return array
+ */
 function getFunctionParams($function) {
     $reflectionFunction =  new \ReflectionFunction($function);
     $params = $reflectionFunction->getParameters();
@@ -90,6 +116,12 @@ function getFunctionParams($function) {
     return $paramNames;
 }
 
+/**
+ * classProperties function
+ *
+ * @param object $object
+ * @return void
+ */
 function classProperties(&$object) {
     $className = get_class($object);
     $ref = new \ReflectionClass($className);
@@ -104,13 +136,25 @@ function classProperties(&$object) {
     return $returnProps;
 }
 
-function base64EncodeImage($filename = string,$filetype = string) {
+/**
+ * base64EncodeImage function
+ *
+ * @param string $filename
+ * @param string $filetype
+ * @return string
+ */
+function base64EncodeImage($filename,$filetype) {
     if ($filename) {
         $imgbinary = fread(fopen($filename, "r"), filesize($filename));
         return 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
     }
 }
 
+/**
+ * getCallingClass function
+ *
+ * @return string|null
+ */
 function getCallingClass() {
     //get the trace
     $trace = debug_backtrace();
@@ -132,12 +176,23 @@ function getCallingClass() {
     }
 }
 
-// Find Class Ancestors (Parents and Parents of Parents)
+/**
+ * Find Class Ancestors (Parents and Parents of Parents)
+ *
+ * @param mixed $class
+ * @return array
+ */
 function getAncestors($class) {
   for ($classes[] = $class; $class = get_parent_class ($class); $classes[] = $class);
   return $classes;
 }
 
+/**
+ * dotNotation function
+ *
+ * @param string $string
+ * @return string
+ */
 function dotNotation($string) {
     return str_replace(['-','\\','/'],'.',$string);
 }
@@ -173,7 +228,7 @@ function cleanVarInfo($var, $indent = '&nbsp;&nbsp;', $indent_close_bracet = '')
         if (count($var)) {
             foreach ($var as $k => $v) {
                 $k_for_display = is_integer($k) ? $k : "'" . clean($k) . "'";
-                $result .= "\n".$indent.'['.$k_for_display.'] => ' .clean_var_info($v,$indent.'&nbsp;&nbsp;',$indent_close_bracet.$indent);
+                $result .= "\n".$indent.'['.$k_for_display.'] => ' .cleanVarInfo($v,$indent.'&nbsp;&nbsp;',$indent_close_bracet.$indent);
             }
         }
         return $result."\n$indent_close_bracet)";
@@ -216,11 +271,10 @@ function isValidFunctionName($str) {
         return false; // empty string
     }
 
-    $first_char = substr_utf($check_str,0,1);
+    $first_char = substr($check_str,0,1);
     if (is_numeric($first_char)) {
         return false; // first char can't be number
     }
-
     return (boolean) preg_match("/^([a-zA-Z0-9_]*)$/",$check_str);
 }
 
@@ -243,25 +297,4 @@ function arrayStripslashes(&$array) {
         }
     }
     return $array;
-}
-
-/**
- * Generates a random id to be used as id of HTML elements.
- * It does not guarantee the uniqueness of the id, but the probability
- * of generating a duplicate id is very small.
- *
- */
-function genId() {
-    static $ids = array();
-    do {
-        $time = time();
-        $rand = rand(0, 1000000);
-        $id = "og_" . $time . "_" . $rand;
-    } while (arrayVar($ids, $id, false));
-    $ids[$id] = true;
-    return $id;
-}
-
-function zipSupported() {
-    return class_exists('ZipArchive',false);
 }

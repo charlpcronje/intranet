@@ -5,7 +5,7 @@ use IteratorAggregate;
 use system\extensions\DB;
 
 class Model implements IteratorAggregate {
-    protected $items = [];
+    public $items = [];
 
     protected $db;
     public $name = null;
@@ -37,7 +37,8 @@ class Model implements IteratorAggregate {
     }
 
     public function fetchRecord() {
-        $this->db->query("SELECT * FROM ? WHERE ? = ?",[$this->table,$this->key,$this->id]);
+        $query = 'SELECT * FROM `'.$this->table.'` WHERE `'.$this->key.'` = \''.$this->id.'\'';
+        $this->db->query($query);
         $this->fetch();
     }
 

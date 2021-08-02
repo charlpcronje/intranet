@@ -3,19 +3,18 @@ use system\base\Controller;
 use system\base\Model;
 
 class EmployeeController extends Controller {
-    function __construct() {
-        
-    }
 
     public function view() {
-        $this->render('employees.html',[
-           'employees' => new Employee(null,true)
-        ]);
+        $empoyees = new Employee(null,true);
+        $this->data->setData('employees',$empoyees->items);
+        $this->render('employees');
     }
 
     public function edit($id) {
-        $this->render('editEmployee.html',[
-           'employee' => new Employee($id)
+        $emp = new Employee($id);
+        pd($emp);
+        $this->render('editEmployee',[
+           'employee' => $emp
         ]);
     }
 }

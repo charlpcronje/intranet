@@ -1,29 +1,18 @@
 <?php
-ini_set('error_reporting',1);
-error_reporting(E_ALL);
+ini_set('display_errors',$_ENV['debug.error.display']);
+ini_set('error_reporting',$_ENV['debug.error.reporting']);
+ini_set('log_errors',$_ENV['debug.error.file.log']);
+ini_set('error_log',$_ENV['debug.error.file.log.path'].'error.log');
+error_reporting(constant($_ENV['debug.error.reporting.level']));
 
-define('DS',DIRECTORY_SEPARATOR);
 define('BASE_PATH',__DIR__.DS);
-
 function getURL() {
-    // Program to display URL of current page.
-    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
+    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') { 
+        $link = "http"; 
+    } else { 
         $link = "https";
-    } else {
-        $link = "http";
     }
-
-    // Here append the common URL characters.
-    $link .= "://";
-
-    // Append the host(domain name, ip) to the URL.
-    $link .= $_SERVER['HTTP_HOST'];
-
-    // Append the requested resource location to the URL
-    $link .= $_SERVER['REQUEST_URI'];
-    
-    // Print the link
+    $link .= "://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
     return $link;
 }
 define('URL',getURL());
-
