@@ -453,3 +453,14 @@ Stack trace:
 #3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
 #4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
 #5 {main}
+[03-Aug-2021 18:14:06 Europe/Berlin] syntax error, unexpected token "}"
+[03-Aug-2021 18:14:06 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 43
+[03-Aug-2021 18:14:06 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(99): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Employee.php(5): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(32): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(99): system\handlers\LoadHandler::includeModel('Employee')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): system\handlers\LoadHandler::autoLoad('Employee')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}

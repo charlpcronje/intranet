@@ -38,9 +38,11 @@ class Model implements IteratorAggregate {
 
     public function save(Model $record) {
         $validated = validate($this->validate,input());
-        foreach($fields as $key=>$value) {
-            val
+        if (!$validated['status']) {
+            return $validated;
         }
+        
+        return true;
     }
 
     public function fetchRecord() {
