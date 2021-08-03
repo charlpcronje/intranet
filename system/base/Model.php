@@ -36,6 +36,13 @@ class Model implements IteratorAggregate {
         return null;
     }
 
+    public function save(Model $record) {
+        $validated = validate($this->validate,input());
+        foreach($fields as $key=>$value) {
+            val
+        }
+    }
+
     public function fetchRecord() {
         $query = 'SELECT * FROM `'.$this->table.'` WHERE `'.$this->key.'` = \''.$this->id.'\'';
         $this->db->query($query);
@@ -69,9 +76,13 @@ class Model implements IteratorAggregate {
         yield from $this->items;
     }
 
+    public function count() {
+        return count($this->items);
+    }
+
     // public function getIterator(){
     //     return (function () {
-    //         while(list($key, $val) = \each($this->items)) {
+    //         while(list($key, $val) = each($this->items)) {
     //             yield $key => $val;
     //         }
     //     })();

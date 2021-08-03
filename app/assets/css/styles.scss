@@ -6,34 +6,36 @@ body {
     font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
     background-color:#01A9DB;
 
-    #wrapper {
-        margin:0 auto;
-        padding:0px;
-        text-align:center;
-        width:995px;
-        h1 {
-            margin-top:50px;
-            font-size:65px;
-        }
+    .card-block {
+        table {
+            width: 100%;
+            background-color: #FAFAFA;
+            border-collapse: collapse;
+            border: 1px solid rgb(238, 238, 238);
+            th {
+                font-family: "Source Sans Pro", sans-serif;
+                background-color: #000;
+                color: #FFF;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
 
-        a {
-            color:white;
-            font-size:20px;
-        }
-        main {
-            table {
-                width: 100%;
-                background-color: #FAFAFA;
-                border-collapse: collapse;
-                border: 1px solid #333;
+            }
+            tr {
+                &:nth-child {
+                    background-color:#FFF;
+                }
                 td {
                     padding: 3px;
+                    line-height: 40px;
                     border-collapse: collapse;
-                    border: 1px solid #333;
+                    
                     a {
                         color: #000;
                     }
                 }
+                
+               
             }
         }
     }

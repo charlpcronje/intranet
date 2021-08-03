@@ -11,6 +11,7 @@ set_exception_handler(function($ex) {
     if (env('debug.error.reporting')) {
         if (env('debug.error.display')) {
             echo $msg." in file: ".$file . " - Line: " . $line;
+            print_r($bt);
         }
         if (env('debug.error.console.log')) {
             echo "<script>".json_encode("File: ".$file. " Line:" . $line."\r\n".$msg)."</script>";
@@ -18,7 +19,9 @@ set_exception_handler(function($ex) {
         if (env('debug.error.header.log')) {
             $exp = explode('/',$file);
             $file = array_pop($exp);
-            header('log_'.$file.'_'.$line.': '.json_encode($msg));
+            if (!headers_sent()) {
+                header('log_'.$file.'_'.$line.': '.json_encode($msg));
+            }
         }
     }
 });

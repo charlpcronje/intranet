@@ -1,0 +1,280 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100;500&family=Codystar:wght@300&family=DotGothic16&family=Londrina+Outline&family=Major+Mono+Display&family=Train+One&family=Wire+One&display=swap');
+// Variables
+$admin-header-height: 70px;
+$admin-footer-height: 70px;
+$admin-nav-width: 250px;
+$font-shoulders: 'Big Shoulders Stencil Display', cursive;
+$font-codystar: 'Codystar', cursive;
+$font-dotgothic: 'DotGothic16', sans-serif;
+$font-londrina: 'Londrina Outline', cursive;
+$font-mono: 'Major Mono Display', monospace;
+$font-train: 'Train One', cursive;
+$font-wore: 'Wire One', sans-serif;
+
+// Globals
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+// Layout Grid
+.admin {
+  --spacing: 1rem;
+
+  // Flexbox Fallback
+  display: flex;
+  flex-wrap: wrap;
+
+  // Grid
+  display: grid;
+  height: 100vh;
+
+  grid-template-rows:     $admin-header-height 1fr $admin-footer-height;
+  grid-template-columns:  $admin-nav-width 1fr;
+  grid-template-areas:    "header header"
+                          "nav    main"
+                          "footer footer";
+
+  &__header {
+    display: flex;
+    flex-basis: 100%;
+    grid-area: header;
+    height: $admin-header-height;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+    h1 {
+      font-size: 28px;
+      span {
+        font-size: 14px;
+        line-height: 6px;
+      }
+    }
+  }
+
+  &__nav {
+    flex: 0 0 $admin-nav-width;
+    grid-area: nav;
+    background-color: #313541;
+
+  }
+
+  &__main {
+    flex: 1;
+    grid-area: main;
+    padding: var(--spacing);
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    background-color: #f4f7fa;
+  }
+
+  &__footer {
+    display: flex;
+    grid-area: footer;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: $admin-footer-height;
+    padding: 0 var(--spacing);
+    color: #4e5561;
+    background-color: #1d2127;
+  }
+
+  @media screen and (min-width: 48rem) {
+    --spacing: 2rem;
+  }
+}
+
+// Overview Grid
+.dashboard {
+  --column-count: 2;
+
+  // Flexbox Fallback
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 calc(var(--spacing) * -0.5);
+
+  // Grid
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 1fr);
+  grid-gap: var(--spacing);
+
+  &__item {
+    // By default, items span 2 columns
+    flex: 1 1 50%;
+    grid-column-end: span 2;
+    padding: calc(var(--spacing) / 2);
+
+    // these span the full width
+    &--full {
+      flex-basis: 100%;
+      grid-column: 1 / -1;
+    }
+
+    // these span only one column
+    &--col {
+      flex-basis: calc(100% / var(--column-count));
+      grid-column-end: span 1;
+    }
+  }
+
+  // Switch to 4-col grid on larger screens
+  @media screen and (min-width: 48rem) {
+    --column-count: 4;
+  }
+
+  // If we have grid support, reset the margins and paddings;
+  // grid-gap works well for this
+  @supports (display: grid) {
+    margin: 0;
+
+    &__item {
+      padding: 0;
+    }
+  }
+}
+
+// Played around a bit here
+a {
+  color: #dc5a60;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  display: flex;
+  flex: 0 0 $admin-nav-width;
+  height: $admin-header-height;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  color: #fff;
+  background-color: #404169ab;
+  font-size: 1rem;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.toolbar {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing);
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+
+  &__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  &__link {
+    display: block;
+    padding: 1rem 2rem;
+    color: #76808f;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #1f222d;
+    }
+  }
+}
+
+.card {
+  height: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-block {
+  padding: 1rem;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5em;
+  border: 0;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+
+  &--primary {
+    color: #fff;
+    background-color: #56bf89;
+  }
+}
+
+.ticker {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: 1rem;
+    color:#f4f7fa;
+    font-size: 12px;
+    span {
+      color: #888;
+      font-size: 11px;
+    }
+  }
+}
+
+input {
+  &[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  &[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  &[type=checkbox] {
+    border:2px dotted #00f;
+    display:block;
+    background:#ff0000
+  }
+}
+
+.form-field {
+  margin-top: 15px;
+  label {
+    width: 100%;
+    display: block !important;
+  }
+}
+

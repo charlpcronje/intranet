@@ -1,30 +1,46 @@
 {% extends layout %}
 {% block title %}Employee List{% endblock %}
-{% block title %}Employee List{% endblock %}
 
 {% block content %}
-    <form action="//<?=env('app.host')?>/<?=env('app.name')?>/Employee/update" method="POST">
-        <label for="first_name">First name:</label><br>
-        <input type="text" id="first_name" name="first_name" value="{{ $employee->first_name }}"><br>
-        
-        <label for="surname">Last name:</label><br>
-        <input type="text" id="surname" name="surname" value="{{ $employee->surname }}"><br><br>
-        
-        <label for="email">Enail:</label><br>
-        <input type="text" id="email" name="email" value="{{ $employee->email }}"><br><br>
-        
-        <label for="contact_number">Contact Number:</label><br>
-        <input type="text" id="contact_number" name="contact_number" value="{{ $employee->contact_number }}"><br><br>
-        
-        <label for="start_date">Start Date:</label><br>
-        <input type="text" id="start_date" name="start_date" value="{{ $employee->start_date }}"><br><br>
-
-        <label for="active">Active:</label><br>
-        <input type="checkbox" id="active" name="active" value="1"><br><br>
-
-        <label for="employee_code">Employee Code:</label><br>
-        <input type="text" id="employee_code" name="employee_code" value="{{ $employee->employee_code }}"><br><br>
-
+<form id="employee_form" action="//<?=env('app.host')?>/<?=env('app.name')?>/Employee/update" method="POST">
+    <div class="form-field">
+        <label for="first_name">First name:</label>
+        <input type="text" id="first_name" name="first_name" value="{{ $employee->first_name }}"/>
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="surname">Last name:</label>
+        <input type="text" id="surname" name="surname" value="{{ $employee->surname }}">
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="email">Enail:</label>
+        <input type="text" id="email" name="email" value="{{ $employee->email }}">
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" id="contact_number" name="contact_number" value="{{ $employee->contact_number }}">
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="start_date">Start Date:</label>
+        <input type="text" id="start_date" name="start_date" value="{{ $employee->start_date }}">
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="active" style="display:block">Active:</label>
+        <input type="checkbox" id="active" name="active" value="{{ $employee->active }}" {% if ($employee->active == 1): %}checked="checked"{% endif; %}>
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="employee_code">Employee Code:</label>
+        <input type="text" id="employee_code" name="employee_code" value="{{ $employee->employee_code }}">
+        <small></small>
+    </div>
+    <div class="form-field">
+        <input type="hidden" value="{{ $employee->id }}">
         <input type="submit" value="Submit">
-    </form>
+    </div>
+</form>  
 {% endblock %}

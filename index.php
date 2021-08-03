@@ -16,4 +16,4 @@ include 'system'.DS.'bootstrap.php';
 
 // Create Applicaiton Object and Handle the Incoming Request
 $app = new system\base\Application();
-$app->handleRequest();
+$app->handleRequest('main');

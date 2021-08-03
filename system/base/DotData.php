@@ -19,7 +19,7 @@ class DotData {
     */
     public $dataSet = null;
     function __construct() {
-        $this->dataSet = Data::getInstance()->data;
+        $this->dataSet = &Data::getInstance()->data;
     }
 
 
@@ -35,7 +35,56 @@ class DotData {
         return $this->dataSet;
     }
 
-    public function setData($dotName,$value,$data = null) {
+    public function __call($key,$arguments) {
+        /**
+         * If there is no $arguments then it is presumed that data are being retreived with key of the
+         * name of the method caught by __call
+         */
+        if (count($arguments) == 0) {
+            return $this->getData([
+                'key' => $key
+            ]);
+        }
+
+        $data = (object)[];
+        $counter = 0;
+        $lastArgument = 0;
+        /**
+         * If there are arguments then it is presumed that data is being saved or retreived,
+         * Each argument is handled separately
+         * If an argument has a key and a value then a save value is implied and if the argument is a
+         * string then it is presumed that the string contains the key for the data being retreied from
+         * the dataSet of the method caught by __call
+         * All the data retreived will be stored in the $data object with a property for each key and the
+         * value of the data found
+         * If only one retreival was done then the $data object will be stripped of it's properties and 
+         * it will contain just the data retreived
+         */
+        foreach($arguments as $argument) {
+            // Retreiving data
+            if (is_string($argument)) {
+                $lastArgument = $argument;
+                $counter++;
+                $data->{$argument} = $this->getData([
+                    'key' => $argument,
+                    'dataSet' => $this->getData([
+                        'key' => $key
+                    ])
+                ]);
+            }
+            // Storing data
+            if (is_array($argument)) {
+                $this->setData(key($argument),current($argument),$this->dataSet->{$key});
+            }
+            
+        }
+        if ($counter == 1) {
+            return $data->{$lastArgument};
+        }
+        return $data;
+    }
+
+    public function setData($dotName,$value,&$data = null) {
         $checkResult      = $this->checkForEscapedDots($dotName);
         if ($checkResult->strEscaped) {
             $escapedDots      = explode('.',$checkResult->dotName);
@@ -48,7 +97,7 @@ class DotData {
         }
 
         if ($data === null && isset($this->dataSet)) {
-            $data = $this->dataSet;
+            $data = &$this->dataSet;
         }
 
         // Repeat until the second last dot
@@ -228,7 +277,11 @@ class DotData {
     ]) {
         $dotName = $options['key'] ?? null;
         $default = $options['default'] ?? null;
-        $data = $options['dataSet'] ?? $this->dataSet;
+        if (isset($options['dataSet'])) {
+            $data = &$options['dataSet'];
+        } else {
+            $data = &$this->dataSet;;
+        } 
         $forget = $options['forget'] ?? null;
         $closeureArgs = $options['closureArgs'] ?? null;
 
@@ -253,7 +306,7 @@ class DotData {
                 $data = $this->getArray($data->{$dot},$array[1]);
             } else {
                 if (isset($data->{$dot})) {
-                    $data = $data->{$dot};
+                    $data = &$data->{$dot};
                 }
             }
         }

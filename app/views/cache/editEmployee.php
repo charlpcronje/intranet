@@ -1,3 +1,4 @@
+<?php class_exists('system\base\View') or exit; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +8,15 @@
     <link rel="stylesheet" href="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/css/styles.css">
     <link rel="stylesheet" href="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/css/code.css">
     <link rel="stylesheet" href="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/css/app.css">
-    {% yield head %}
-    <title>{% yield title %}</title>
+    
+    <title>Employee List</title>
 </head>
 <body>
     <div class="admin">
     <header class="admin__header">
         <a href="#" class="logo">
             
-        <h1>{% yield title %}</h1>
+        <h1>Employee List</h1>
         </a>
         <div class="toolbar">
         <button class="btn btn--primary">Add New Employee</button>
@@ -51,7 +52,7 @@
         <div class="dashboard">
         <div class="dashboard__item">
             <div class="card">
-            <strong>{{ $employee_count }}</strong> Employees
+            <strong><?php echo $employee_count ?></strong> Employees
             </div>
         </div>
         <div class="dashboard__item">
@@ -61,7 +62,49 @@
         </div>
         <div class="dashboard__item dashboard__item--full">
             <div class="card-block">
-                {% yield content %}
+                
+<form id="employee_form" action="//<?=env('app.host')?>/<?=env('app.name')?>/Employee/update" method="POST">
+    <div class="form-field">
+        <label for="first_name">First name:</label>
+        <input type="text" id="first_name" name="first_name" value="<?php echo $employee->first_name ?>"/>
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="surname">Last name:</label>
+        <input type="text" id="surname" name="surname" value="<?php echo $employee->surname ?>">
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="email">Enail:</label>
+        <input type="text" id="email" name="email" value="<?php echo $employee->email ?>">
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" id="contact_number" name="contact_number" value="<?php echo $employee->contact_number ?>">
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="start_date">Start Date:</label>
+        <input type="text" id="start_date" name="start_date" value="<?php echo $employee->start_date ?>">
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="active" style="display:block">Active:</label>
+        <input type="checkbox" id="active" name="active" value="<?php echo $employee->active ?>" <?php if ($employee->active == 1): ?>checked="checked"<?php endif; ?>>
+        <small></small>
+    </div>
+    <div class="form-field">
+        <label for="employee_code">Employee Code:</label>
+        <input type="text" id="employee_code" name="employee_code" value="<?php echo $employee->employee_code ?>">
+        <small></small>
+    </div>
+    <div class="form-field">
+        <input type="hidden" value="<?php echo $employee->id ?>">
+        <input type="submit" value="Submit">
+    </div>
+</form>  
+
             </div>
         </div>
         <p>contact me at <a href="mailto:charlcp@gmail.com">charlcp@gmail.com</a>.</p>
@@ -126,9 +169,11 @@
             
         </main>
         <footer>
-        {% yield footer %}
+        
         </footer>
    
-    {% yield end %}
+    
 </body>
 </html>
+
+

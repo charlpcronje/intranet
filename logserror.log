@@ -1,172 +1,455 @@
-[02-Aug-2021 07:21:59 Europe/Berlin] extract(): Argument #1 ($array) must be of type array, null given
-[02-Aug-2021 07:21:59 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 21
-[02-Aug-2021 07:21:59 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(21): extract(NULL, 1)
-#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render('index', NULL)
-#2 C:\xampp8\htdocs\intranet\app\controllers\HomeController.php(6): system\base\Controller->render('index')
-#3 C:\xampp8\htdocs\intranet\system\base\Application.php(21): HomeController->__construct()
-#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#5 {main}
-[02-Aug-2021 07:23:07 Europe/Berlin] Cannot access protected property HomeController::$id
-[02-Aug-2021 07:23:07 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 22
-[02-Aug-2021 07:23:07 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#1 {main}
-[02-Aug-2021 07:23:54 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, second array member is not a valid method
-[02-Aug-2021 07:23:54 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
-[02-Aug-2021 07:23:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+[02-Aug-2021 15:36:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function encrypt() in C:\xampp8\htdocs\intranet\system\handlers\SecureSessionHandler.php:36
+Stack trace:
+#0 [internal function]: system\handlers\SecureSessionHandler->write('uvc61q64odr7nns...', '')
+#1 [internal function]: session_write_close()
 #2 {main}
-[02-Aug-2021 07:24:34 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\base\Controller.php on line 28
-[02-Aug-2021 07:24:34 Europe/Berlin] PHP Warning:  file_get_contents(app\views\Array.phtml): Failed to open stream: No such file or directory in C:\xampp8\htdocs\intranet\system\base\View.php on line 110
-[02-Aug-2021 07:24:55 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\base\Controller.php on line 28
-[02-Aug-2021 07:24:55 Europe/Berlin] PHP Warning:  file_get_contents(app\views\Array.phtml): Failed to open stream: No such file or directory in C:\xampp8\htdocs\intranet\system\base\View.php on line 110
-[02-Aug-2021 07:25:54 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
-[02-Aug-2021 07:25:54 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 19
-[02-Aug-2021 07:25:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(19): strlen(Array)
-#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
-#2 [internal function]: system\base\Controller->render(Array)
-#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#5 {main}
-[02-Aug-2021 07:26:44 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
-[02-Aug-2021 07:26:44 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 20
-[02-Aug-2021 07:26:44 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(20): strlen(Array)
-#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
-#2 [internal function]: system\base\Controller->render(Array)
-#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#5 {main}
-[02-Aug-2021 07:27:23 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
-[02-Aug-2021 07:27:23 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 20
-[02-Aug-2021 07:27:23 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(20): strlen(Array)
-#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
-#2 [internal function]: system\base\Controller->render(Array)
-#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#5 {main}
-[02-Aug-2021 07:29:59 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
-[02-Aug-2021 07:29:59 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 20
-[02-Aug-2021 07:29:59 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(20): strlen(Array)
-#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
-#2 [internal function]: system\base\Controller->render(Array)
-#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#5 {main}
-[02-Aug-2021 07:30:30 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
-[02-Aug-2021 07:30:30 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 20
-[02-Aug-2021 07:30:30 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(20): strlen(Array)
-#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
-#2 [internal function]: system\base\Controller->render(Array)
-#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#5 {main}
-[02-Aug-2021 07:31:01 Europe/Berlin] strlen(): Argument #1 ($string) must be of type string, array given
-[02-Aug-2021 07:31:01 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\View.php - 20
-[02-Aug-2021 07:31:01 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(20): strlen(Array)
-#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render(Array, NULL)
-#2 [internal function]: system\base\Controller->render(Array)
-#3 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#5 {main}
-[02-Aug-2021 07:42:55 Europe/Berlin] Class "Controller" not found
-[02-Aug-2021 07:42:55 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
-[02-Aug-2021 07:42:55 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#1 {main}
-[02-Aug-2021 07:43:25 Europe/Berlin] Class "Controller" not found
-[02-Aug-2021 07:43:25 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
-[02-Aug-2021 07:43:25 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#1 {main}
-[02-Aug-2021 07:46:58 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
-[02-Aug-2021 07:46:58 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
-[02-Aug-2021 07:46:58 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#1 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
-#2 {main}
-[02-Aug-2021 07:47:04 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
-[02-Aug-2021 07:47:04 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
-[02-Aug-2021 07:47:04 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#1 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
-#2 {main}
-[02-Aug-2021 07:48:23 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
-[02-Aug-2021 07:48:23 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
-[02-Aug-2021 07:48:23 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#1 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
-#2 {main}
-[02-Aug-2021 07:49:48 Europe/Berlin] Class "EtestController" not found
-[02-Aug-2021 07:49:48 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
-[02-Aug-2021 07:49:48 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
-#1 {main}
-[02-Aug-2021 07:49:54 Europe/Berlin] Class "EtestController" not found
-[02-Aug-2021 07:49:54 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
-[02-Aug-2021 07:49:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
-#1 {main}
-[02-Aug-2021 07:49:58 Europe/Berlin] Class "EtestController" not found
-[02-Aug-2021 07:49:58 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
-[02-Aug-2021 07:49:58 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(20): system\base\Application->handleRequest()
-#1 {main}
-[02-Aug-2021 07:50:31 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method "employee"
-[02-Aug-2021 07:50:31 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
-[02-Aug-2021 07:50:31 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
-#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#2 {main}
-[02-Aug-2021 07:50:45 Europe/Berlin] PHP Warning:  file_get_contents(app\views\employees\html): Failed to open stream: No such file or directory in C:\xampp8\htdocs\intranet\system\base\View.php on line 110
-[02-Aug-2021 07:52:09 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 07:52:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 07:54:04 Europe/Berlin] syntax error, unexpected variable "$this"
-[02-Aug-2021 07:54:04 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 13
-[02-Aug-2021 07:54:04 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(99): system\handlers\LoadHandler::includeController('EmployeeControl...')
-#1 C:\xampp8\htdocs\intranet\system\base\Application.php(21): system\handlers\LoadHandler::autoLoad('EmployeeControl...')
+  thrown in C:\xampp8\htdocs\intranet\system\handlers\SecureSessionHandler.php on line 36
+[02-Aug-2021 15:38:16 Europe/Berlin] Call to a member function all() on null
+[02-Aug-2021 15:38:16 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Controller.php - 28
+[02-Aug-2021 15:38:16 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\HomeController.php(6): system\base\Controller->render('dashboard')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(21): HomeController->__construct()
 #2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
 #3 {main}
-[02-Aug-2021 07:54:11 Europe/Berlin] Cannot use object of type Employee as array
-[02-Aug-2021 07:54:11 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 12
-[02-Aug-2021 07:54:11 Europe/Berlin] #0 [internal function]: EmployeeController->view(Array)
-#1 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+[02-Aug-2021 15:39:41 Europe/Berlin] Call to a member function all() on null
+[02-Aug-2021 15:39:41 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Controller.php - 29
+[02-Aug-2021 15:39:41 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\HomeController.php(6): system\base\Controller->render('dashboard')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(21): HomeController->__construct()
 #2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
 #3 {main}
-[02-Aug-2021 07:56:16 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 07:56:16 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:00:20 Europe/Berlin] Call to a member function set() on null
-[02-Aug-2021 08:00:20 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 12
-[02-Aug-2021 08:00:20 Europe/Berlin] #0 [internal function]: EmployeeController->view(Array)
-#1 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+[02-Aug-2021 15:40:03 Europe/Berlin] Call to a member function all() on null
+[02-Aug-2021 15:40:03 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Controller.php - 29
+[02-Aug-2021 15:40:03 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\HomeController.php(6): system\base\Controller->render('dashboard')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(21): HomeController->__construct()
 #2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
 #3 {main}
-[02-Aug-2021 08:00:54 Europe/Berlin] Call to protected system\base\Controller::__construct() from scope system\base\Application
-[02-Aug-2021 08:00:54 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
-[02-Aug-2021 08:00:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
-#1 {main}
-[02-Aug-2021 08:01:17 Europe/Berlin] Cannot instantiate trait system\base\DotData
-[02-Aug-2021 08:01:17 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Controller.php - 13
-[02-Aug-2021 08:01:17 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(21): system\base\Controller->__construct()
+[02-Aug-2021 15:42:48 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 15:42:48 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 15:42:48 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
 #1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
 #2 {main}
-[02-Aug-2021 08:09:39 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:09:39 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:10:59 Europe/Berlin] PHP Warning:  Undefined array key "default" in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 225
-[02-Aug-2021 08:10:59 Europe/Berlin] PHP Warning:  Undefined array key "forget" in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 227
-[02-Aug-2021 08:10:59 Europe/Berlin] PHP Warning:  Undefined array key "closureArgs" in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 228
-[02-Aug-2021 08:10:59 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:10:59 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:11:48 Europe/Berlin] PHP Warning:  Undefined array key "forget" in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 227
-[02-Aug-2021 08:11:48 Europe/Berlin] PHP Warning:  Undefined array key "closureArgs" in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 228
-[02-Aug-2021 08:11:48 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:11:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:12:25 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:12:25 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:17:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$data in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 21
-[02-Aug-2021 08:17:43 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$data in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 21
-[02-Aug-2021 08:19:21 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$data in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 21
-[02-Aug-2021 08:19:21 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$data in C:\xampp8\htdocs\intranet\system\base\DotData.php on line 21
-[02-Aug-2021 08:25:06 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:25:06 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:25:08 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:25:08 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:34:15 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:34:15 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:34:17 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:34:17 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:34:17 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:34:17 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:34:37 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:34:37 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:35:04 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
-[02-Aug-2021 08:35:04 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 51
+[02-Aug-2021 15:42:49 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 15:42:49 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 15:42:49 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 15:44:22 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 15:44:22 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 15:44:22 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 15:44:22 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 15:44:22 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 15:44:22 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 15:44:36 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 15:44:36 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 15:44:36 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 15:44:37 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 15:44:37 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 15:44:37 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 15:47:34 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 15:47:34 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 15:47:34 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 15:47:35 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 15:47:35 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 15:47:35 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 15:48:37 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 15:48:37 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 15:48:37 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 15:48:37 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\app\views\cache\dashboard.php:11) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 15:48:37 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 15:48:37 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 15:48:37 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 15:49:16 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 15:49:16 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 15:49:16 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 15:49:16 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 15:49:16 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 15:49:16 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 17:09:05 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 17:09:05 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 17:09:05 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 17:09:06 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 17:09:06 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 17:09:06 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 17:09:09 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 17:09:09 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 17:09:09 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 17:09:09 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 17:09:09 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 17:09:09 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 17:13:32 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 17:13:32 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 17:13:32 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 17:13:33 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 17:13:33 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 17:13:33 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 17:13:40 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 17:13:40 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 17:13:40 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 17:13:40 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 17:13:40 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 17:13:40 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 17:13:42 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 17:13:42 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 17:13:42 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 17:13:42 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 17:13:42 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 17:13:42 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 17:14:25 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 17:14:25 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 17:14:25 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 17:14:25 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 17:14:25 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 17:14:25 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 17:15:45 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 17:15:45 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 17:15:45 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 17:15:45 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 17:15:45 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 17:15:45 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 17:18:14 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 17:18:14 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 17:18:14 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 17:18:14 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 17:18:14 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 17:18:14 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 19:37:15 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 19:37:15 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 19:37:15 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 19:37:15 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 19:37:15 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 19:37:15 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 19:42:48 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 19:42:48 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 19:42:48 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 19:42:48 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 19:42:48 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 19:42:48 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 19:46:06 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 19:46:06 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 19:46:06 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 19:46:06 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 19:46:06 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 19:46:06 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 19:47:29 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 19:47:29 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 19:47:29 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 19:47:29 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php:16) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 19:47:29 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 19:47:29 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 19:47:29 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 19:47:48 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 19:47:48 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 19:47:48 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 19:47:48 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php:16) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 19:47:49 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 19:47:49 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 19:47:49 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 19:48:12 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 19:48:12 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 19:48:12 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 19:48:12 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php:16) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 19:48:12 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 19:48:12 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 19:48:12 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 19:49:28 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 19:49:28 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 19:49:28 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 19:49:28 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php:16) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 19:49:28 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 19:49:28 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 19:49:28 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 21:22:52 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 21:22:52 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 21:22:52 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 21:22:52 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php:16) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 21:22:52 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 21:22:52 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 21:22:52 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 21:23:28 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 21:23:28 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 21:23:28 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 21:23:28 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php:16) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 21:23:28 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 21:23:28 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 21:23:28 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 21:23:40 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 21:23:40 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 21:23:40 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 21:23:40 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php:16) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 21:23:40 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 21:23:40 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 21:23:40 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 21:52:39 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 21:52:39 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 21:52:39 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 21:52:39 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\app\views\cache\dashboard.php:11) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 21:52:40 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 21:52:40 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 21:52:40 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 21:53:34 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 21:53:34 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 21:53:34 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 21:53:34 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\app\views\cache\dashboard.php:11) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 21:53:34 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 21:53:34 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 21:53:34 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 22:03:49 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 22:03:49 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 25
+[02-Aug-2021 22:03:49 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(25): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#2 {main}
+[02-Aug-2021 22:03:49 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\app\views\cache\dashboard.php:11) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 22:03:49 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 22:03:49 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 22
+[02-Aug-2021 22:03:49 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest()
+#1 {main}
+[02-Aug-2021 22:09:09 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 22:09:09 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 22:09:09 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[02-Aug-2021 22:09:09 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp8\htdocs\intranet\app\views\cache\dashboard.php:11) in C:\xampp8\htdocs\intranet\system\handlers\ExceptionHandler.php on line 21
+[02-Aug-2021 22:09:09 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 22:09:09 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 22:09:09 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#1 {main}
+[02-Aug-2021 22:11:07 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 22:11:07 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 22:11:07 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[02-Aug-2021 22:13:01 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 22:13:01 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 22:13:01 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[02-Aug-2021 22:13:01 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 22:13:01 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 22:13:01 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#1 {main}
+[02-Aug-2021 22:14:17 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 22:14:17 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 24
+[02-Aug-2021 22:14:17 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(24): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[02-Aug-2021 22:14:17 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 22:14:17 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 21
+[02-Aug-2021 22:14:17 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#1 {main}
+[02-Aug-2021 22:17:36 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 22:17:36 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 25
+[02-Aug-2021 22:17:36 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(25): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[02-Aug-2021 22:17:38 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 22:17:38 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 25
+[02-Aug-2021 22:17:38 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(25): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[02-Aug-2021 22:18:31 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[02-Aug-2021 22:18:31 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 25
+[02-Aug-2021 22:18:31 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(25): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[02-Aug-2021 22:18:31 Europe/Berlin] Class "LocalhostController" not found
+[02-Aug-2021 22:18:31 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 22
+[02-Aug-2021 22:18:31 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#1 {main}
+[03-Aug-2021 09:21:53 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[03-Aug-2021 09:21:53 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 25
+[03-Aug-2021 09:21:53 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(25): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[03-Aug-2021 09:21:53 Europe/Berlin] Class "LocalhostController" not found
+[03-Aug-2021 09:21:53 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 22
+[03-Aug-2021 09:21:53 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#1 {main}
+[03-Aug-2021 09:23:11 Europe/Berlin] call_user_func(): Argument #1 ($callback) must be a valid callback, class HomeController does not have a method ""
+[03-Aug-2021 09:23:11 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 25
+[03-Aug-2021 09:23:11 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(25): call_user_func(Array, Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[03-Aug-2021 09:23:11 Europe/Berlin] Class "LocalhostController" not found
+[03-Aug-2021 09:23:11 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 22
+[03-Aug-2021 09:23:11 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#1 {main}
+[03-Aug-2021 09:45:04 Europe/Berlin] Undefined constant "employee_count"
+[03-Aug-2021 09:45:04 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\dashboard.php - 55
+[03-Aug-2021 09:45:04 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\View::render('dashboard', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\HomeController.php(7): system\base\Controller->render('dashboard')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(22): HomeController->__construct()
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[03-Aug-2021 09:45:11 Europe/Berlin] PHP Warning:  Undefined variable $employee_count in C:\xampp8\htdocs\intranet\app\views\cache\dashboard.php on line 55
+[03-Aug-2021 12:32:14 Europe/Berlin] syntax error, unexpected token "&", expecting ")"
+[03-Aug-2021 12:32:14 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\DotData.php - 73
+[03-Aug-2021 12:32:14 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(15): include()
+#1 {main}
+[03-Aug-2021 12:42:17 Europe/Berlin] syntax error, unexpected token "{"
+[03-Aug-2021 12:42:17 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\DotData.php - 273
+[03-Aug-2021 12:42:17 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\index.php(15): include()
+#1 {main}
+[03-Aug-2021 14:59:01 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\base\Model.php on line 40
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Attempt to read property "email" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 14:59:02 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 14:59:33 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\base\Model.php on line 40
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Attempt to read property "email" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 14:59:34 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\base\Model.php on line 40
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Attempt to read property "email" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 15:01:35 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 15:03:13 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\base\Model.php on line 40
+[03-Aug-2021 15:07:44 Europe/Berlin] explode(): Argument #2 ($string) must be of type string, array given
+[03-Aug-2021 15:07:44 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Application.php - 19
+[03-Aug-2021 15:07:44 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(19): explode('/', Array)
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Attempt to read property "email" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 15:09:46 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Attempt to read property "email" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 15:10:35 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 68
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 71
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Attempt to read property "email" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 77
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 80
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Undefined variable $employee in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 15:11:57 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[03-Aug-2021 15:52:59 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp8\htdocs\intranet\system\base\Application.php on line 19
+[03-Aug-2021 16:02:12 Europe/Berlin] syntax error, unexpected token "endif", expecting end of file
+[03-Aug-2021 16:02:12 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php - 94
+[03-Aug-2021 16:02:12 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(35): system\base\View::render('editEmployee', Array)
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(13): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}

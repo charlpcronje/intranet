@@ -4,8 +4,8 @@ use system\extensions\DB;
 
 class Employee extends Model {
     public $validate = [
-        'first_name' => ['required'],
-        'email' => ['required','email']
+        'employee_id' => ['required'],
+        'group_id' => ['required']
     ];
 
     function __construct($id = null) {

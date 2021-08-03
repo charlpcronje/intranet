@@ -1,10 +1,9 @@
 <?php
 namespace system\base;
+
+use Group;
 use \system\base\DotData;
 class Controller {
-   
-
-    // @var Action the action that is currently being executed.
     public $id; 
     public $action;
     public $data;
@@ -25,6 +24,14 @@ class Controller {
     }
 
     public function render($view) {
+        $empoyees = new \Employee(null,true);
+        $this->data->setData('employees',$empoyees->items);
+        $this->data->setData('employee_count',count($empoyees->items));
+
+        $groups = new Group(null,true);
+        $this->data->setData('groups',$groups->items);
+        $this->data->setData('group_count',$empoyees->count());
+
         return View::render($view,(array)$this->data->all());
     }
 }
