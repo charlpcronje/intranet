@@ -11,9 +11,8 @@
  Target Server Version : 100417
  File Encoding         : 65001
 
- Date: 30/07/2021 14:46:41
+ Date: 03/08/2021 16:45:54
 */
-
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
@@ -33,18 +32,18 @@ CREATE TABLE `employee`  (
   `employee_code` varchar(11) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `id`(`id`) USING BTREE,
-  INDEX `active`(`start_date`, `active`) USING BTREE,
   UNIQUE INDEX `code`(`employee_code`) USING BTREE,
+  INDEX `active`(`start_date`, `active`) USING BTREE,
   CONSTRAINT `employeeGroups` FOREIGN KEY (`id`) REFERENCES `employee_groups` (`employee_id`) ON DELETE CASCADE ON UPDATE RESTRICT
 ) ENGINE = InnoDB AUTO_INCREMENT = 33 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of employee
 -- ----------------------------
-INSERT INTO `employee` VALUES (2, 'James', 'Wayne', 'jwayne@isa.co.za', '011 032 7799', '2016-07-01 12:34:51', 0, 'JAM002');
+INSERT INTO `employee` VALUES (2, 'James', 'Wayne', 'jwayne@isa.co.za', '011 032 7799', '2016-07-01 12:34:51', 1, 'JAM002');
 INSERT INTO `employee` VALUES (3, 'testName', 'testSurname', 'testName@gmail.com', '011 032 7788', '2017-07-04 17:18:35', 1, 'TES003');
 INSERT INTO `employee` VALUES (4, 'John', 'Wick', 'john@isa.co.za', '011 078 0760', '2017-10-12 10:28:12', 1, 'JOH004');
-INSERT INTO `employee` VALUES (5, 'Max', 'Payne', 'maxp@isa.co.za', '011 012 1254', '2018-01-13 13:20:10', 0, 'MAX005');
+INSERT INTO `employee` VALUES (5, 'Max', 'Payne', 'maxp@isa.co.za', '011 012 1254', '2018-01-13 13:20:10', 1, 'MAX005');
 
 -- ----------------------------
 -- Table structure for employee_groups
