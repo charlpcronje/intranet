@@ -1,4 +1,7 @@
 <?php
+class validate {
+    
+}
 function validate($rules,$input) {
     
     foreach($input as $key => $value) {
@@ -23,3 +26,5 @@ function requried($value = null) {
     }
     return false;
 }
+
+
