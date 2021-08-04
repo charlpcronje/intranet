@@ -31,16 +31,15 @@
         </thead>
         <tbody>
             {% foreach($employees as $person): %}
-           
             <tr>
-                <td>{{ $person['first_name'] }}</td>
-                <td>{{ $person['surname'] }}</td>
-                <td>{{ $person['email'] }}</td>
-                <td>{{ $person['contact_number'] }}</td>
-                <td>{{ $person['start_date'] }}</td>
-                <td>{{ $person['active'] }}</td>
-                <td>{{ $person['employee_code'] }}</td>
-                <td><a href="//<?=env('app.host')?>/<?=env('app.name')?>/employee/edit/{{ $person['id'] }}">Edit</a></td>
+                <td>{{ $person->first_name }}</td>
+                <td>{{ $person->surname }}</td>
+                <td>{{ $person->email }}</td>
+                <td>{{ $person->contact_number }}</td>
+                <td>{{ $person->start_date }}</td>
+                <td>{{ $person->active }}</td>
+                <td>{{ $person->employee_code }}</td>
+                <td><a href="//<?=env('app.host')?>/<?=env('app.name')?>/employee/edit/{{ $person->id }}">Edit</a></td>
             </tr>
             {% endforeach; %}
         </tbody>

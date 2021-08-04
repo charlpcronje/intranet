@@ -1277,3 +1277,161 @@ Stack trace:
 #3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
 #4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
 #5 {main}
+[04-Aug-2021 16:13:21 Europe/Berlin] syntax error, unexpected token "}"
+[04-Aug-2021 16:13:21 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 24
+[04-Aug-2021 16:13:21 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeController('EmployeeControl...')
+#1 [internal function]: system\handlers\LoadHandler::autoLoad('EmployeeControl...')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(24): class_exists('EmployeeControl...')
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 16:13:33 Europe/Berlin] Call to undefined function render()
+[04-Aug-2021 16:13:33 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 23
+[04-Aug-2021 16:13:33 Europe/Berlin] #0 [internal function]: EmployeeController->update('')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 16:13:54 Europe/Berlin] PHP Warning:  Undefined variable $employee_count in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 55
+[04-Aug-2021 16:13:54 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 94
+[04-Aug-2021 16:13:54 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 94
+[04-Aug-2021 16:17:35 Europe/Berlin] syntax error, unexpected variable "$this", expecting "function" or "const"
+[04-Aug-2021 16:17:35 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 6
+[04-Aug-2021 16:17:35 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeController('EmployeeControl...')
+#1 [internal function]: system\handlers\LoadHandler::autoLoad('EmployeeControl...')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(24): class_exists('EmployeeControl...')
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 16:18:11 Europe/Berlin] Call to a member function setData() on null
+[04-Aug-2021 16:18:11 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 9
+[04-Aug-2021 16:18:11 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(25): EmployeeController->__construct()
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[04-Aug-2021 16:18:40 Europe/Berlin] Call to a member function setData() on null
+[04-Aug-2021 16:18:40 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 9
+[04-Aug-2021 16:18:40 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Application.php(25): EmployeeController->__construct()
+#1 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#2 {main}
+[04-Aug-2021 16:18:54 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:18:54 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 96
+[04-Aug-2021 16:18:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(34): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->update('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:19:19 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:19:19 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 96
+[04-Aug-2021 16:19:19 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(34): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->update('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:20:21 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:20:21 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 103
+[04-Aug-2021 16:20:21 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(34): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->update('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:20:46 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:20:46 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 103
+[04-Aug-2021 16:20:46 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(34): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->update('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:20:54 Europe/Berlin] PHP Warning:  Undefined variable $employee_count in C:\xampp8\htdocs\intranet\app\views\cache\dashboard.php on line 58
+[04-Aug-2021 16:23:06 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:23:06 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 103
+[04-Aug-2021 16:23:06 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(20): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->view('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:24:27 Europe/Berlin] explode(): Argument #2 ($string) must be of type string, array given
+[04-Aug-2021 16:24:27 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\DotData.php - 156
+[04-Aug-2021 16:24:27 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\DotData.php(156): explode('.', Array)
+#1 C:\xampp8\htdocs\intranet\system\base\DotData.php(88): system\base\DotData->checkForEscapedDots(Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(22): system\base\DotData->setData(Array, 'employees')
+#3 [internal function]: EmployeeController->view('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:24:54 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:24:54 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 103
+[04-Aug-2021 16:24:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(25): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->view('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:28:05 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:28:05 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 103
+[04-Aug-2021 16:28:05 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(23): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->view('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:28:11 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:28:11 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 103
+[04-Aug-2021 16:28:11 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(23): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->view('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:28:31 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:28:31 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 103
+[04-Aug-2021 16:28:31 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(23): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->view('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:28:31 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:28:31 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 103
+[04-Aug-2021 16:28:31 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(23): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->view('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:28:31 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 16:28:31 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\employees.php - 103
+[04-Aug-2021 16:28:31 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\View.php(24): require()
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('employees', Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(23): system\base\Controller->render('employees')
+#3 [internal function]: EmployeeController->view('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:30:20 Europe/Berlin] PHP Warning:  Undefined variable $employees in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 94
+[04-Aug-2021 16:30:20 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\app\views\cache\employees.php on line 94
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php on line 26
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 16
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 16
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 23
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 23
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 76
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 81
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "email" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 86
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 91
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 96
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "active" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 101
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "active" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 101
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 106
+[04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "id" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 121

@@ -10,7 +10,7 @@ $font-dotgothic: 'DotGothic16', sans-serif;
 $font-londrina: 'Londrina Outline', cursive;
 $font-mono: 'Major Mono Display', monospace;
 $font-train: 'Train One', cursive;
-$font-wore: 'Wire One', sans-serif;
+$font-wire: 'Wire One', sans-serif;
 
 // Globals
 *,
@@ -268,6 +268,15 @@ input {
     display:block;
     background:#ff0000
   }
+  &:invalid {
+    border: 2px dashed red;
+    &:required {
+      background-image: linear-gradient(to right, red, darkred);
+    }
+  }
+  &:valid {
+    border: 2px solid black;
+  }
 }
 
 .form-field {
@@ -278,3 +287,14 @@ input {
   }
 }
 
+#form_errors {
+  border: 1px solid #964739;
+  color: #964739;
+  font-size: 14px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #f0dede;
+  border-radius: 4px;
+  padding: 15px;
+  border: 1px solid transparent;
+
+}

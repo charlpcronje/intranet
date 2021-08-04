@@ -310,6 +310,19 @@ input[type=checkbox] {
   background: #ff0000;
 }
 
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(darkred));
+  background-image: linear-gradient(to right, red, darkred);
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
 .form-field {
   margin-top: 15px;
 }
@@ -317,5 +330,16 @@ input[type=checkbox] {
 .form-field label {
   width: 100%;
   display: block !important;
+}
+
+#form_errors {
+  border: 1px solid #964739;
+  color: #964739;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0dede;
+  border-radius: 4px;
+  padding: 15px;
+  border: 1px solid transparent;
 }
 /*# sourceMappingURL=app.css.map */

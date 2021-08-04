@@ -9,18 +9,14 @@
     <link rel="stylesheet" href="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/css/code.css">
     <link rel="stylesheet" href="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/css/app.css">
     
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script type="module" src="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/js/Employee.js"></script>
-    <link rel="stylesheet" href="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/css/mSelect.css">
-
-    <title>Edit <?php echo $employee->first_name ?> <?php echo $employee->surname ?></title>
+    <title>Employee List</title>
 </head>
 <body>
     <div class="admin">
     <header class="admin__header">
         <a href="#" class="logo">
             
-        <h1>Edit <?php echo $employee->first_name ?> <?php echo $employee->surname ?></h1>
+        <h1>Employee List</h1>
         </a>
         <div class="toolbar">
         <button class="btn btn--primary">Add New Employee</button>
@@ -67,58 +63,48 @@
         <div class="dashboard__item dashboard__item--full">
             <div class="card-block">
                 
-<form id="employee_form" action="//<?=env('app.host')?>/<?=env('app.name')?>/Employee/update" method="POST">
-    <div class="form-field">
-        <label for="first_name">First name:</label>
-        <input type="text" id="first_name" name="first_name" value="<?php echo $employee->first_name ?>"/>
-        <small></small>
-    </div>
-    <div class="form-field">
-        <label for="surname">Last name:</label>
-        <input type="text" id="surname" name="surname" value="<?php echo $employee->surname ?>">
-        <small></small>
-    </div>
-    <div class="form-field">
-        <label for="email">Enail:</label>
-        <input type="text" id="email" name="email" value="<?php echo $employee->email ?>">
-        <small></small>
-    </div>
-    <div class="form-field">
-        <label for="contact_number">Contact Number:</label>
-        <input type="text" id="contact_number" name="contact_number" value="<?php echo $employee->contact_number ?>">
-        <small></small>
-    </div>
-    <div class="form-field">
-        <label for="start_date">Start Date:</label>
-        <input type="text" id="start_date" name="start_date" value="<?php echo $employee->start_date ?>">
-        <small></small>
-    </div>
-    <div class="form-field">
-        <label for="active" style="display:block">Active:</label>
-        <input type="checkbox" id="active" name="active" value="<?php echo $employee->active ?>" <?php if ($employee->active == 1): ?>checked="checked"<?php endif; ?>>
-        <small></small>
-    </div>
-    <div class="form-field">
-        <label for="employee_code">Employee Code:</label>
-        <input type="text" id="employee_code" name="employee_code" value="<?php echo $employee->employee_code ?>">
-        <small></small>
-    </div>
-
-    <div >
-        <label for="employee_groups">Employee Grups:</label>
-        <div id="MSelectContainer">
-            <select id="employee_groups"  class="form-control" name="employee_groups[]" multiple="multiple">
-            <?php foreach($groups as $group): ?>
-                <option value="1" <?php if (isset($employee->groups[$group->id])): ?> selected="selected"<?php endif ?> ><?php echo $group->group_name ?></option>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Surname
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Tel
+                </th>
+                <th>
+                    Start Date
+                </th>
+                <th>
+                    Active
+                </th>
+                <th>
+                    Code
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($employees as $person): ?>
+            <tr>
+                <td><?php echo $person->first_name ?></td>
+                <td><?php echo $person->surname ?></td>
+                <td><?php echo $person->email ?></td>
+                <td><?php echo $person->contact_number ?></td>
+                <td><?php echo $person->start_date ?></td>
+                <td><?php echo $person->active ?></td>
+                <td><?php echo $person->employee_code ?></td>
+                <td><a href="//<?=env('app.host')?>/<?=env('app.name')?>/employee/edit/<?php echo $person->id ?>">Edit</a></td>
+            </tr>
             <?php endforeach; ?>
-            </select>
-        </div>
-    </div>
-    <div class="form-field">
-        <input type="hidden" name="id" value="<?php echo $employee->id ?>">
-        <input type="submit" value="Submit">
-    </div>
-</form>  
+        </tbody>
+    </table>   
 
             </div>
         </div>
@@ -190,6 +176,5 @@
     
 </body>
 </html>
-
 
 
