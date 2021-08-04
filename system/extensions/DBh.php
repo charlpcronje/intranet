@@ -161,7 +161,7 @@ class DBh {
      * @param array $array
      * @return array
      */
-	protected static function colonize($array) {
+	public static function colonize($array) {
 		$return = [];
 		foreach ($array as $key => $value) {
 			if ($key[0] != ':') {

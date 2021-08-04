@@ -28,6 +28,11 @@ class EmployeeController extends Controller {
     }
 
     public function update() {
+        $post = post();
+        Employee::save($post);
+        $this->employees = Employee::all();
+        $this->employees = transpose($this->employees,'id','groups','group_id',['group_name','group_id']);
+        $this->data->setData('employees',$this->employees);
         $this->render('employees');
     }
 }

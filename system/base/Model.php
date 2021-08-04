@@ -30,9 +30,7 @@ class Model implements IteratorAggregate {
     }
 
     public static function all() {
-        
         $model = new static();
-        
         $model->items = $model
             ->db::prepare($model->sql->all)
             ->execute()
@@ -60,13 +58,21 @@ class Model implements IteratorAggregate {
         return null;
     }
 
-    public function save(Model $record) {
-        $validated = validate($this->validate,input());
+    public static function save($input) {
+        $model = new static();
+        $validated = validate($model->validate,$input);
         if (!$validated['status']) {
             return $validated;
         }
-        
-        return true;
+        $input = post();
+        unset($input['employee_groups']);
+        $stmt = $model->db::prepare($model->sql->update);
+        $input = $model->db::colonize($input);
+      
+        if ($stmt->execute($input)) {
+            return true;
+        }
+        return false;
     }
 
     public function fetchRecord() {

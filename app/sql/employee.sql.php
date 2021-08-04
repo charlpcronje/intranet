@@ -49,5 +49,17 @@ return (object)[
             ON 
                 employee_groups.group_id = groups.id
         ORDER BY
-            employee.start_date DESC"
+            employee.start_date DESC",
+
+    'update' => "
+        UPDATE `employee` SET 
+            first_name = :first_name, 
+            surname = :surname, 
+            email = :email, 
+            contact_number = :contact_number, 
+            start_date = :start_date, 
+            active = :active, 
+            employee_code = :employee_code
+        WHERE `id` = :id
+    "
 ];

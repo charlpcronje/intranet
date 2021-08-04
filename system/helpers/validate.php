@@ -9,15 +9,16 @@ class validate {
     }
 }
 function validate($rules,$input) {
-    
     foreach($input as $key => $value) {
         if (isset($rules[$key])) {
-            if (!call_user_func($rules[$key],$value)) {
-                return [
-                    'status' => false,
-                    'field' => $key,
-                    'rule' => $rules[$key]
-                ];
+            foreach($rules[$key] as $rule) {
+                if (!call_user_func($rule,$value)) {
+                    return [
+                        'status' => false,
+                        'field' => $key,
+                        'rule' => $rules[$key]
+                    ];
+                }
             }
         }
     }
@@ -25,8 +26,11 @@ function validate($rules,$input) {
         'status' => true
     ];
 }
+function email($value = null) {
+    return filter_var($value, FILTER_VALIDATE_EMAIL);
+}
 
-function requried($value = null) {
+function required($value = null) {
     if (isset($value) && strlen($value) > 0) {
         return true;
     }

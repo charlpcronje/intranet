@@ -1435,3 +1435,110 @@ Stack trace:
 [04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "active" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 101
 [04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 106
 [04-Aug-2021 16:32:02 Europe/Berlin] PHP Warning:  Attempt to read property "id" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 121
+[04-Aug-2021 16:49:05 Europe/Berlin] syntax error, unexpected token ";", expecting "]"
+[04-Aug-2021 16:49:05 Europe/Berlin] C:\xampp8\htdocs\intranet\app\sql\employee.sql.php - 64
+[04-Aug-2021 16:49:05 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Model.php(28): loadSQL('employee.sql')
+#1 C:\xampp8\htdocs\intranet\app\models\Employee.php(14): system\base\Model->__construct(NULL)
+#2 C:\xampp8\htdocs\intranet\system\base\Model.php(34): Employee->__construct()
+#3 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(9): system\base\Model::all()
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(25): EmployeeController->__construct()
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 16:49:43 Europe/Berlin] array_push(): Argument #1 ($array) cannot be passed by reference
+[04-Aug-2021 16:49:43 Europe/Berlin] C:\xampp8\htdocs\intranet\system\helpers\request.php - 82
+[04-Aug-2021 16:49:43 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(31): input()
+#1 [internal function]: EmployeeController->update('')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 16:51:56 Europe/Berlin] array_push(): Argument #1 ($array) cannot be passed by reference
+[04-Aug-2021 16:51:56 Europe/Berlin] C:\xampp8\htdocs\intranet\system\helpers\request.php - 82
+[04-Aug-2021 16:51:56 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(31): input()
+#1 [internal function]: EmployeeController->update('')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 16:51:58 Europe/Berlin] array_push(): Argument #1 ($array) cannot be passed by reference
+[04-Aug-2021 16:51:58 Europe/Berlin] C:\xampp8\htdocs\intranet\system\helpers\request.php - 82
+[04-Aug-2021 16:51:58 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(31): input()
+#1 [internal function]: EmployeeController->update('')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 16:52:56 Europe/Berlin] call_user_func(): Argument #1 ($function) must be a valid callback, array must have exactly two members
+[04-Aug-2021 16:52:56 Europe/Berlin] C:\xampp8\htdocs\intranet\system\helpers\validate.php - 15
+[04-Aug-2021 16:52:56 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Model.php(63): validate(Array, Array)
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(32): system\base\Model::save(Array)
+#2 [internal function]: EmployeeController->update('')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 16:58:28 Europe/Berlin] call_user_func(): Argument #1 ($function) must be a valid callback, function "required" not found or invalid function name
+[04-Aug-2021 16:58:28 Europe/Berlin] C:\xampp8\htdocs\intranet\system\helpers\validate.php - 15
+[04-Aug-2021 16:58:28 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Model.php(63): validate(Array, Array)
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(32): system\base\Model::save(Array)
+#2 [internal function]: EmployeeController->update('')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 16:58:49 Europe/Berlin] call_user_func(): Argument #1 ($function) must be a valid callback, function "email" not found or invalid function name
+[04-Aug-2021 16:58:49 Europe/Berlin] C:\xampp8\htdocs\intranet\system\helpers\validate.php - 15
+[04-Aug-2021 16:58:49 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Model.php(63): validate(Array, Array)
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(32): system\base\Model::save(Array)
+#2 [internal function]: EmployeeController->update('')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 17:01:32 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 245
+[04-Aug-2021 17:01:32 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-Aug-2021 17:01:32 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 245
+[04-Aug-2021 17:01:32 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(245): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(68): system\extensions\DBh->execute(Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(32): system\base\Model::save(Array)
+#3 [internal function]: EmployeeController->update('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 17:03:05 Europe/Berlin] syntax error, unexpected token "(", expecting ":"
+[04-Aug-2021 17:03:05 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 68
+[04-Aug-2021 17:03:05 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(34): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(8): system\handlers\LoadHandler::autoLoad('Group')
+#5 C:\xampp8\htdocs\intranet\system\base\Application.php(25): EmployeeController->__construct()
+#6 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#7 {main}
+[04-Aug-2021 17:21:12 Europe/Berlin] Call to protected method system\extensions\DBh::colonize() from scope system\base\Model
+[04-Aug-2021 17:21:12 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 70
+[04-Aug-2021 17:21:12 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(32): system\base\Model::save(Array)
+#1 [internal function]: EmployeeController->update('')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 17:23:28 Europe/Berlin] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':first_name, 
+            surname = :surname, 
+            email = :email, ...' at line 2
+[04-Aug-2021 17:23:28 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 245
+[04-Aug-2021 17:23:28 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(245): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(74): system\extensions\DBh->execute()
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(32): system\base\Model::save(Array)
+#3 [internal function]: EmployeeController->update('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 17:27:04 Europe/Berlin] Undefined constant "this"
+[04-Aug-2021 17:27:04 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 35
+[04-Aug-2021 17:27:04 Europe/Berlin] #0 [internal function]: EmployeeController->update('')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 17:27:53 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-Aug-2021 17:27:53 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 245
+[04-Aug-2021 17:27:53 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(245): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(72): system\extensions\DBh->execute(Array)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(32): system\base\Model::save(Array)
+#3 [internal function]: EmployeeController->update('')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
