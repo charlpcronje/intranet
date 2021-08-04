@@ -15,3 +15,4 @@ class EmployeeGroup extends Model {
         }
     }
 }
+

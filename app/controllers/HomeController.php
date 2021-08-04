@@ -15,3 +15,4 @@ class HomeController extends Controller {
         $this->render('dashboard');  
     }
 }
+
