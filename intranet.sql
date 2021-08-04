@@ -11,7 +11,7 @@
  Target Server Version : 100417
  File Encoding         : 65001
 
- Date: 03/08/2021 16:45:54
+ Date: 04/08/2021 16:34:29
 */
 
 SET NAMES utf8mb4;
@@ -33,14 +33,13 @@ CREATE TABLE `employee`  (
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `id`(`id`) USING BTREE,
   UNIQUE INDEX `code`(`employee_code`) USING BTREE,
-  INDEX `active`(`start_date`, `active`) USING BTREE,
-  CONSTRAINT `employeeGroups` FOREIGN KEY (`id`) REFERENCES `employee_groups` (`employee_id`) ON DELETE CASCADE ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 33 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+  INDEX `active`(`start_date`, `active`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 37 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of employee
 -- ----------------------------
-INSERT INTO `employee` VALUES (2, 'James', 'Wayne', 'jwayne@isa.co.za', '011 032 7799', '2016-07-01 12:34:51', 1, 'JAM002');
+INSERT INTO `employee` VALUES (2, 'Charl', 'Payne', 'maxp@isa.co.za', '011 012 1254', '2021-07-06 12:24:41', 1, 'MDU782');
 INSERT INTO `employee` VALUES (3, 'testName', 'testSurname', 'testName@gmail.com', '011 032 7788', '2017-07-04 17:18:35', 1, 'TES003');
 INSERT INTO `employee` VALUES (4, 'John', 'Wick', 'john@isa.co.za', '011 078 0760', '2017-10-12 10:28:12', 1, 'JOH004');
 INSERT INTO `employee` VALUES (5, 'Max', 'Payne', 'maxp@isa.co.za', '011 012 1254', '2018-01-13 13:20:10', 1, 'MAX005');
@@ -56,17 +55,20 @@ CREATE TABLE `employee_groups`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `employee_id`(`employee_id`) USING BTREE,
   INDEX `group_id`(`group_id`) USING BTREE,
-  CONSTRAINT `empId` FOREIGN KEY (`employee_id`) REFERENCES `employee` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT,
-  CONSTRAINT `grId` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+  CONSTRAINT `employeeid` FOREIGN KEY (`employee_id`) REFERENCES `employee` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `groupid` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of employee_groups
 -- ----------------------------
-INSERT INTO `employee_groups` VALUES (2, 2, 1);
 INSERT INTO `employee_groups` VALUES (3, 3, 1);
 INSERT INTO `employee_groups` VALUES (4, 4, 1);
 INSERT INTO `employee_groups` VALUES (5, 5, 1);
+INSERT INTO `employee_groups` VALUES (7, 3, 2);
+INSERT INTO `employee_groups` VALUES (8, 4, 2);
+INSERT INTO `employee_groups` VALUES (10, 2, 1);
+INSERT INTO `employee_groups` VALUES (11, 2, 2);
 
 -- ----------------------------
 -- Table structure for groups
