@@ -1,7 +1,6 @@
 <?php
 namespace system\base;
 
-use Group;
 use \system\base\DotData;
 class Controller {
     public $id; 
@@ -23,15 +22,8 @@ class Controller {
         return json_encode($data);
     }
 
-    public function render($view) {
-        $empoyees = new \Employee(null,true);
-        $this->data->setData('employees',$empoyees->items);
-        $this->data->setData('employee_count',count($empoyees->items));
-
-        $groups = new Group(null,true);
-        $this->data->setData('groups',$groups->items);
-        $this->data->setData('group_count',$empoyees->count());
-
+    public function render($view,$data = null) {
+        //$this->data->setData('groups',$groups->items);
         return View::render($view,(array)$this->data->all());
     }
 }

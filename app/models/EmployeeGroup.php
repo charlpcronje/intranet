@@ -1,26 +1,17 @@
 <?php 
 use system\base\Model;
-use system\extensions\DB;
 
-class Employee extends Model {
-    public $validate = [
-        'employee_id' => ['required'],
-        'group_id' => ['required']
-    ];
-
-    function __construct($id = null) {
-        $this->table = 'employee';
-        $this->orderBy = 'start_date';
-        if (isset($id)) {
-            parent::__construct($id);
-        } else {
-            parent::__construct($id,true);
-        }
-    }
-
+class EmployeeGroup extends Model {
     
-
-    public function count() {
-        return count($this->items);
+    function __construct($id = null) {
+        $this->table = 'employee_groups';
+        $this->sqlStmts = 'employeeGroups.sql';
+        $this->validate = [
+            'group_id' => ['required'],
+            'employee_id' => ['required']
+        ];
+        if (isset($id)) {
+            parent::find($id);
+        }
     }
 }

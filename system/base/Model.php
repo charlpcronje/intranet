@@ -3,26 +3,47 @@ namespace system\base;
 
 use IteratorAggregate;
 use system\extensions\DB;
-
+use system\extensions\DBh;
+use \stdClass; 
 class Model implements IteratorAggregate {
+    protected $db = null; // MySQLi or PDO  
+    public $dbClass = 'system\extensions\DBh';
+    public $sqlStmts = null;
+    public $sql = null;
     public $items = [];
-
-    protected $db;
     public $name = null;
     public $table = null;
     public $key = 'id';
     public $validate = [];
     public $orderBy = null;
+    
 
-    public function __construct($id = null,$fetchAll = false){
-        $this->db = new DB('default');
-        if (isset($id) && isset($this->table)) {
-            $this->id = $id;
-            $this->fetchRecord();
+    public function __construct(){
+        // Get an instance of the DB Class
+        if (!isset($this->db)) {
+            $this->db = $this->dbClass::getInstance('default');
         }
-        if ($fetchAll) {
-            $this->fetchAllRecords();
+        // Load the prepared statements
+        if (isset($this->sqlStmts)) {
+            $this->sql = loadSQL($this->sqlStmts);
         }
+    }
+
+    public static function all() {
+        
+        $model = new static();
+        
+        $model->items = $model
+            ->db::prepare($model->sql->all)
+            ->execute()
+            ->all(\PDO::FETCH_OBJ);
+        return $model->items;
+    }
+
+    public static function find($id) {
+        $model = new static();
+        $model->items = $model->db::prepare($model->sql->find)->bindParam('id', $id)->execute()->all(\PDO::FETCH_OBJ);
+        return $model->items;
     }
 
     public function __set($name, $value) {
@@ -30,8 +51,11 @@ class Model implements IteratorAggregate {
     }
 
     public function __get($name) {
-        if (array_key_exists($name, $this->items)) {
-            return $this->items[$name];
+        if (array_key_exists($name,current($this->items))) {
+            return current($this->items)[$name];
+        }
+        if (property_exists(current($this->items), $name)) {
+            return current($this->items)->$name;
         }
         return null;
     }
@@ -46,9 +70,8 @@ class Model implements IteratorAggregate {
     }
 
     public function fetchRecord() {
-        $query = 'SELECT * FROM `'.$this->table.'` WHERE `'.$this->key.'` = \''.$this->id.'\'';
-        $this->db->query($query);
-        $this->fetch();
+        $sql = "SELECT * FROM ".DBh::escapeTable($this->table)." WHERE :key = :id";
+        $this->items = DBh::prepare($sql)->bindParam('id', $this->id)->bindParam('key',$this->id)->execute()->one(\PDO::FETCH_OBJ);
     }
 
     public function fetchAllRecords() {

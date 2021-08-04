@@ -28,6 +28,21 @@ function ddc($var) {
 }
 
 /**
+ * print_pre function
+ *
+ * @param array $array
+ * @return void
+ */
+function pp($array,$showCallingClass = true){
+    echo '<pre style="z-index:1000;background-color:rgba(192,192,192,0.9);left:0;top:100px;width:4000px;overflow:scroll;position:absolute;white-space: pre;">';
+    print_r($array);
+    echo '</pre>';
+    if ($showCallingClass) {
+        echo '<div style="display:block; clear:both">Called From: <strong>'.getCallingClass().'</strong></div>';
+    }
+}
+
+/**
  * Print and die
  *
  * @param mixed $var
@@ -298,3 +313,4 @@ function arrayStripslashes(&$array) {
     }
     return $array;
 }
+

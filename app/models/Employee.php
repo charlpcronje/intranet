@@ -1,24 +1,18 @@
 <?php 
 use system\base\Model;
-use system\extensions\DB;
 
 class Employee extends Model {
-    public $validate = [
-        'first_name' => ['required'],
-        'email' => ['required','email']
-    ];
-
+    
     function __construct($id = null) {
         $this->table = 'employee';
+        $this->sqlStmts = 'employee.sql';
         $this->orderBy = 'start_date';
-        if (isset($id)) {
-            parent::__construct($id);
-        } else {
-            parent::__construct($id,true);
-        }
+        $this->validate = [
+            'first_name' => ['required'],
+            'email' => ['required','email']
+        ];
+        parent::__construct($id);
     }
-
-    
 
     public function count() {
         return count($this->items);

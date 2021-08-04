@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/css/code.css">
     <link rel="stylesheet" href="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/css/app.css">
     
-    <title>Employee List</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script type="module" src="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/js/Employee.js"></script>
+    <link rel="stylesheet" href="//<?=env('app.host')?>/<?=env('app.name')?>/app/assets/css/mSelect.css">
+
+    <title>Edit <?php echo $employee->first_name ?> <?php echo $employee->surname ?></title>
 </head>
 <body>
     <div class="admin">
     <header class="admin__header">
         <a href="#" class="logo">
             
-        <h1>Employee List</h1>
+        <h1>Edit <?php echo $employee->first_name ?> <?php echo $employee->surname ?></h1>
         </a>
         <div class="toolbar">
         <button class="btn btn--primary">Add New Employee</button>
@@ -99,8 +103,19 @@
         <input type="text" id="employee_code" name="employee_code" value="<?php echo $employee->employee_code ?>">
         <small></small>
     </div>
+
+    <div >
+        <label for="employee_groups">Employee Grups:</label>
+        <div id="MSelectContainer">
+            <select id="employee_groups"  class="form-control" name="employee_groups[]" multiple="multiple">
+            <?php foreach($groups as $group): ?>
+                <option value="1" <?php if (isset($employee->groups[$group->id])): ?> selected="selected"<?php endif ?> ><?php echo $group->group_name ?></option>
+            <?php endforeach; ?>
+            </select>
+        </div>
+    </div>
     <div class="form-field">
-        <input type="hidden" value="<?php echo $employee->id ?>">
+        <input type="hidden" name="id" value="<?php echo $employee->id ?>">
         <input type="submit" value="Submit">
     </div>
 </form>  
@@ -175,5 +190,6 @@
     
 </body>
 </html>
+
 
 

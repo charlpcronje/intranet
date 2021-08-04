@@ -464,3 +464,816 @@ Stack trace:
 #6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
 #7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
 #8 {main}
+[04-Aug-2021 06:20:32 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 207
+[04-Aug-2021 06:20:32 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 234
+[04-Aug-2021 06:20:32 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-Aug-2021 06:20:32 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 234
+[04-Aug-2021 06:20:32 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(234): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(50): system\extensions\DBh->execute()
+#2 C:\xampp8\htdocs\intranet\system\base\Model.php(21): system\base\Model->fetchRecord()
+#3 C:\xampp8\htdocs\intranet\app\models\Employee.php(15): system\base\Model->__construct('2')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): Employee->__construct('2')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 06:21:11 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 206
+[04-Aug-2021 06:21:11 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 208
+[04-Aug-2021 06:21:11 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 235
+[04-Aug-2021 06:21:11 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-Aug-2021 06:21:11 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 235
+[04-Aug-2021 06:21:11 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(235): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(50): system\extensions\DBh->execute()
+#2 C:\xampp8\htdocs\intranet\system\base\Model.php(21): system\base\Model->fetchRecord()
+#3 C:\xampp8\htdocs\intranet\app\models\Employee.php(15): system\base\Model->__construct('2')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): Employee->__construct('2')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 06:21:30 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 206
+[04-Aug-2021 06:21:30 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 208
+[04-Aug-2021 06:21:30 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 235
+[04-Aug-2021 06:21:30 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-Aug-2021 06:21:30 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 235
+[04-Aug-2021 06:21:30 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(235): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(50): system\extensions\DBh->execute()
+#2 C:\xampp8\htdocs\intranet\system\base\Model.php(21): system\base\Model->fetchRecord()
+#3 C:\xampp8\htdocs\intranet\app\models\Employee.php(15): system\base\Model->__construct('2')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): Employee->__construct('2')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 06:21:33 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 206
+[04-Aug-2021 06:21:33 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 208
+[04-Aug-2021 06:21:33 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 235
+[04-Aug-2021 06:21:33 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-Aug-2021 06:21:33 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 235
+[04-Aug-2021 06:21:33 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(235): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(50): system\extensions\DBh->execute()
+#2 C:\xampp8\htdocs\intranet\system\base\Model.php(21): system\base\Model->fetchRecord()
+#3 C:\xampp8\htdocs\intranet\app\models\Employee.php(15): system\base\Model->__construct('2')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): Employee->__construct('2')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 06:24:09 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 156
+[04-Aug-2021 06:24:09 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 156
+[04-Aug-2021 06:24:09 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[04-Aug-2021 06:24:09 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 234
+[04-Aug-2021 06:24:09 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(234): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(50): system\extensions\DBh->execute(Array, Array)
+#2 C:\xampp8\htdocs\intranet\system\base\Model.php(21): system\base\Model->fetchRecord()
+#3 C:\xampp8\htdocs\intranet\app\models\Employee.php(15): system\base\Model->__construct('2')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): Employee->__construct('2')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 06:25:34 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 157
+[04-Aug-2021 06:25:34 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 157
+[04-Aug-2021 06:25:34 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[04-Aug-2021 06:25:34 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 235
+[04-Aug-2021 06:25:34 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(235): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(50): system\extensions\DBh->execute(Array, Array)
+#2 C:\xampp8\htdocs\intranet\system\base\Model.php(21): system\base\Model->fetchRecord()
+#3 C:\xampp8\htdocs\intranet\app\models\Employee.php(15): system\base\Model->__construct('2')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): Employee->__construct('2')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 06:28:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 157
+[04-Aug-2021 06:28:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 157
+[04-Aug-2021 06:28:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 157
+[04-Aug-2021 06:28:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 157
+[04-Aug-2021 06:28:02 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[04-Aug-2021 06:28:02 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 235
+[04-Aug-2021 06:28:02 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(235): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(50): system\extensions\DBh->execute(Array)
+#2 C:\xampp8\htdocs\intranet\system\base\Model.php(21): system\base\Model->fetchRecord()
+#3 C:\xampp8\htdocs\intranet\app\models\Employee.php(15): system\base\Model->__construct('2')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): Employee->__construct('2')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 06:28:52 Europe/Berlin] Call to a member function result_metadata() on null
+[04-Aug-2021 06:28:52 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DB.php - 174
+[04-Aug-2021 06:28:52 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Model.php(66): system\extensions\DB->fetchObject()
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(52): system\base\Model->fetch()
+#2 C:\xampp8\htdocs\intranet\system\base\Model.php(21): system\base\Model->fetchRecord()
+#3 C:\xampp8\htdocs\intranet\app\models\Employee.php(15): system\base\Model->__construct('2')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): Employee->__construct('2')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 06:30:24 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 06:30:24 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 12
+[04-Aug-2021 06:30:24 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 06:31:11 Europe/Berlin] Cannot use object of type stdClass as array
+[04-Aug-2021 06:31:11 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 12
+[04-Aug-2021 06:31:11 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 06:32:13 Europe/Berlin] Undefined constant "emp"
+[04-Aug-2021 06:32:13 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 13
+[04-Aug-2021 06:32:13 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 09:13:07 Europe/Berlin] Class "DBh" not found
+[04-Aug-2021 09:13:07 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 22
+[04-Aug-2021 09:13:07 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\models\Employee.php(17): system\base\Model->__construct(NULL, true)
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): Employee->__construct(NULL, true)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(16): system\base\Controller->render('editEmployee')
+#3 [internal function]: EmployeeController->edit('2')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 09:14:22 Europe/Berlin] Class "\system\extenions\DBh" not found
+[04-Aug-2021 09:14:22 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 22
+[04-Aug-2021 09:14:22 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\models\Employee.php(17): system\base\Model->__construct(NULL, true)
+#1 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): Employee->__construct(NULL, true)
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(16): system\base\Controller->render('editEmployee')
+#3 [internal function]: EmployeeController->edit('2')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 09:15:20 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 166
+[04-Aug-2021 09:15:20 Europe/Berlin] PDO::prepare(): Argument #1 ($query) cannot be empty
+[04-Aug-2021 09:15:20 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 187
+[04-Aug-2021 09:15:20 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(187): PDO->prepare('')
+#1 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(25): system\extensions\DBh->prepareSetup(NULL, NULL)
+#2 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(32): system\extensions\DBh->__construct()
+#3 C:\xampp8\htdocs\intranet\system\base\Model.php(22): system\extensions\DBh::getInstance('default')
+#4 C:\xampp8\htdocs\intranet\app\models\Employee.php(17): system\base\Model->__construct(NULL, true)
+#5 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): Employee->__construct(NULL, true)
+#6 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(16): system\base\Controller->render('editEmployee')
+#7 [internal function]: EmployeeController->edit('2')
+#8 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#9 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#10 {main}
+[04-Aug-2021 09:39:06 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 166
+[04-Aug-2021 09:39:06 Europe/Berlin] PDO::prepare(): Argument #1 ($query) cannot be empty
+[04-Aug-2021 09:39:06 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 187
+[04-Aug-2021 09:39:06 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(187): PDO->prepare('')
+#1 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(25): system\extensions\DBh->prepareSetup(NULL, NULL)
+#2 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(32): system\extensions\DBh->__construct()
+#3 C:\xampp8\htdocs\intranet\system\base\Model.php(22): system\extensions\DBh::getInstance('default')
+#4 C:\xampp8\htdocs\intranet\app\models\Employee.php(20): system\base\Model->__construct(NULL, true)
+#5 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): Employee->__construct(NULL, true)
+#6 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(16): system\base\Controller->render('editEmployee')
+#7 [internal function]: EmployeeController->edit('2')
+#8 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#9 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#10 {main}
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Undefined variable $connName in C:\xampp8\htdocs\intranet\system\extensions\DB.php on line 28
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Undefined variable $connName in C:\xampp8\htdocs\intranet\system\extensions\DB.php on line 28
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 69
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Attempt to read property "email" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 79
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 84
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 89
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Attempt to read property "active" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 94
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Attempt to read property "active" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 94
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 99
+[04-Aug-2021 09:39:41 Europe/Berlin] PHP Warning:  Attempt to read property "id" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 103
+[04-Aug-2021 09:40:07 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 69
+[04-Aug-2021 09:40:07 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[04-Aug-2021 09:40:07 Europe/Berlin] PHP Warning:  Attempt to read property "email" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 79
+[04-Aug-2021 09:40:07 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 84
+[04-Aug-2021 09:40:07 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 89
+[04-Aug-2021 09:40:07 Europe/Berlin] PHP Warning:  Attempt to read property "active" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 94
+[04-Aug-2021 09:40:07 Europe/Berlin] PHP Warning:  Attempt to read property "active" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 94
+[04-Aug-2021 09:40:07 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 99
+[04-Aug-2021 09:40:07 Europe/Berlin] PHP Warning:  Attempt to read property "id" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 103
+[04-Aug-2021 09:44:08 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 69
+[04-Aug-2021 09:44:08 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[04-Aug-2021 09:44:08 Europe/Berlin] PHP Warning:  Attempt to read property "email" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 79
+[04-Aug-2021 09:44:08 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 84
+[04-Aug-2021 09:44:08 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 89
+[04-Aug-2021 09:44:08 Europe/Berlin] PHP Warning:  Attempt to read property "active" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 94
+[04-Aug-2021 09:44:08 Europe/Berlin] PHP Warning:  Attempt to read property "active" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 94
+[04-Aug-2021 09:44:08 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 99
+[04-Aug-2021 09:44:08 Europe/Berlin] PHP Warning:  Attempt to read property "id" on bool in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 103
+[04-Aug-2021 09:44:28 Europe/Berlin] PHP Fatal error:  Cannot make static method system\base\Model::find() non static in class Employee in C:\xampp8\htdocs\intranet\app\models\Employee.php on line 25
+[04-Aug-2021 10:01:39 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 166
+[04-Aug-2021 10:01:39 Europe/Berlin] PDO::prepare(): Argument #1 ($query) cannot be empty
+[04-Aug-2021 10:01:39 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 187
+[04-Aug-2021 10:01:39 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(187): PDO->prepare('')
+#1 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(25): system\extensions\DBh->prepareSetup(NULL, NULL)
+#2 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(32): system\extensions\DBh->__construct()
+#3 C:\xampp8\htdocs\intranet\system\base\Model.php(24): system\extensions\DBh::getInstance('default')
+#4 C:\xampp8\htdocs\intranet\app\models\Employee.php(16): system\base\Model->__construct('2')
+#5 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): Employee->__construct('2')
+#6 [internal function]: EmployeeController->edit('2')
+#7 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#8 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#9 {main}
+[04-Aug-2021 10:03:28 Europe/Berlin] Using $this when not in object context
+[04-Aug-2021 10:03:28 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 46
+[04-Aug-2021 10:03:28 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): system\base\Model::find('2')
+#1 [internal function]: EmployeeController->edit('2')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 10:05:33 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\system\extensions\DBh.php on line 166
+[04-Aug-2021 10:05:33 Europe/Berlin] PDO::prepare(): Argument #1 ($query) cannot be empty
+[04-Aug-2021 10:05:33 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 187
+[04-Aug-2021 10:05:33 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(187): PDO->prepare('')
+#1 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(25): system\extensions\DBh->prepareSetup(NULL, NULL)
+#2 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(32): system\extensions\DBh->__construct()
+#3 C:\xampp8\htdocs\intranet\system\base\Model.php(24): system\extensions\DBh::getInstance('default')
+#4 C:\xampp8\htdocs\intranet\system\base\Model.php(46): system\base\Model->__construct()
+#5 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): system\base\Model::find('2')
+#6 [internal function]: EmployeeController->edit('2')
+#7 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#8 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#9 {main}
+[04-Aug-2021 10:15:03 Europe/Berlin] PHP Parse error:  syntax error, unexpected identifier "pd" in C:\xampp8\htdocs\intranet\system\helpers\general.php on line 320
+[04-Aug-2021 10:15:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected identifier "pp" in C:\xampp8\htdocs\intranet\system\helpers\general.php on line 320
+[04-Aug-2021 10:15:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected identifier "print_r" in C:\xampp8\htdocs\intranet\system\helpers\general.php on line 320
+[04-Aug-2021 10:15:42 Europe/Berlin] file_get_contents() expects at least 1 argument, 0 given
+[04-Aug-2021 10:15:42 Europe/Berlin] C:\xampp8\htdocs\intranet\system\helpers\general.php - 321
+[04-Aug-2021 10:15:42 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\helpers\general.php(321): file_get_contents()
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(28): loadSQL('employee.sql')
+#2 C:\xampp8\htdocs\intranet\app\models\Employee.php(16): system\base\Model->__construct(NULL)
+#3 C:\xampp8\htdocs\intranet\system\base\Model.php(46): Employee->__construct()
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): system\base\Model::find('2')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 10:31:40 Europe/Berlin] Call to undefined method system\extensions\DBh::fetchAll()
+[04-Aug-2021 10:31:40 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 92
+[04-Aug-2021 10:31:40 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Model.php(82): system\base\Model->fetchAll()
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(37): system\base\Model->fetchAllRecords()
+#2 C:\xampp8\htdocs\intranet\app\models\Group.php(11): system\base\Model->__construct(NULL, true)
+#3 C:\xampp8\htdocs\intranet\system\base\Controller.php(31): Group->__construct(NULL, true)
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(12): system\base\Controller->render('editEmployee')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 10:40:56 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$all in C:\xampp8\htdocs\intranet\system\base\Model.php on line 34
+[04-Aug-2021 10:40:56 Europe/Berlin] PDO::prepare(): Argument #1 ($query) cannot be empty
+[04-Aug-2021 10:40:56 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 187
+[04-Aug-2021 10:40:56 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(187): PDO->prepare('')
+#1 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(25): system\extensions\DBh->prepareSetup(NULL, Array)
+#2 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(206): system\extensions\DBh->__construct(NULL, Array)
+#3 C:\xampp8\htdocs\intranet\system\base\Model.php(34): system\extensions\DBh::prepare(NULL)
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\base\Model::all('2')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 10:41:31 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$all in C:\xampp8\htdocs\intranet\system\base\Model.php on line 34
+[04-Aug-2021 10:41:31 Europe/Berlin] PDO::prepare(): Argument #1 ($query) cannot be empty
+[04-Aug-2021 10:41:31 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 187
+[04-Aug-2021 10:41:31 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(187): PDO->prepare('')
+#1 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(25): system\extensions\DBh->prepareSetup(NULL, Array)
+#2 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(206): system\extensions\DBh->__construct(NULL, Array)
+#3 C:\xampp8\htdocs\intranet\system\base\Model.php(34): system\extensions\DBh::prepare(NULL)
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\base\Model::all()
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 10:42:37 Europe/Berlin] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':id
+        ORDER BY
+            employee.start_date DESC' at line 22
+[04-Aug-2021 10:42:37 Europe/Berlin] C:\xampp8\htdocs\intranet\system\extensions\DBh.php - 245
+[04-Aug-2021 10:42:37 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\extensions\DBh.php(245): PDOStatement->execute(Array)
+#1 C:\xampp8\htdocs\intranet\system\base\Model.php(34): system\extensions\DBh->execute()
+#2 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\base\Model::all()
+#3 [internal function]: EmployeeController->edit('2')
+#4 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#5 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#6 {main}
+[04-Aug-2021 10:55:23 Europe/Berlin] PHP Fatal error:  Cannot redeclare loadSQL() (previously declared in C:\xampp8\htdocs\intranet\system\helpers\general.php:317) in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 2
+[04-Aug-2021 11:04:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 10
+[04-Aug-2021 11:05:20 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transpose(), 3 passed in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 6 and exactly 4 expected in C:\xampp8\htdocs\intranet\system\helpers\object.php:7
+Stack trace:
+#0 C:\xampp8\htdocs\intranet\system\helpers\object.php(6): transpose(NULL, 'goups', Array)
+#1 C:\xampp8\htdocs\intranet\system\bootstrap.php(6): include('C:\\xampp8\\htdoc...')
+#2 C:\xampp8\htdocs\intranet\index.php(15): include('C:\\xampp8\\htdoc...')
+#3 {main}
+  thrown in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 7
+[04-Aug-2021 11:06:40 Europe/Berlin] Call to undefined function pf()
+[04-Aug-2021 11:06:40 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 12
+[04-Aug-2021 11:06:40 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 11:58:54 Europe/Berlin] PHP Warning:  Attempt to read property "id" on array in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 9
+[04-Aug-2021 11:58:54 Europe/Berlin] PHP Warning:  Attempt to read property "id" on array in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 10
+[04-Aug-2021 11:58:54 Europe/Berlin] PHP Warning:  Attempt to read property "group_name" on array in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 14
+[04-Aug-2021 11:58:54 Europe/Berlin] PHP Warning:  Attempt to read property "group_id" on array in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 14
+[04-Aug-2021 11:58:54 Europe/Berlin] PHP Warning:  Attempt to read property "id" on array in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 16
+[04-Aug-2021 11:58:54 Europe/Berlin] PHP Warning:  Attempt to read property "group_id" on array in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 16
+[04-Aug-2021 11:58:54 Europe/Berlin] Attempt to modify property "groups" on array
+[04-Aug-2021 11:58:54 Europe/Berlin] C:\xampp8\htdocs\intranet\system\helpers\object.php - 16
+[04-Aug-2021 11:58:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(14): transpose(Array, 'id', 'groups', 'group_id', Array)
+#1 [internal function]: EmployeeController->edit('2')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 12:28:46 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php on line 17
+[04-Aug-2021 12:28:46 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 69
+[04-Aug-2021 12:28:46 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 74
+[04-Aug-2021 12:28:46 Europe/Berlin] PHP Warning:  Attempt to read property "email" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 79
+[04-Aug-2021 12:28:46 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 84
+[04-Aug-2021 12:28:46 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 89
+[04-Aug-2021 12:28:46 Europe/Berlin] PHP Warning:  Attempt to read property "active" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 94
+[04-Aug-2021 12:28:46 Europe/Berlin] PHP Warning:  Attempt to read property "active" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 94
+[04-Aug-2021 12:28:46 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 99
+[04-Aug-2021 12:28:46 Europe/Berlin] PHP Warning:  Attempt to read property "id" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 103
+[04-Aug-2021 13:01:12 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:01:12 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 13:01:12 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(28): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:01:38 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:01:38 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 13:01:38 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:02:31 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:02:31 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 13:02:31 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:05:38 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:05:38 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 13:05:38 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:09:00 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:09:00 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 35
+[04-Aug-2021 13:09:00 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:11:00 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:11:00 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 35
+[04-Aug-2021 13:11:00 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:12:00 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:12:00 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 35
+[04-Aug-2021 13:12:00 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:12:01 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:12:01 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 35
+[04-Aug-2021 13:12:01 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:12:01 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:12:01 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 35
+[04-Aug-2021 13:12:01 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:12:01 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:12:01 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 35
+[04-Aug-2021 13:12:01 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:12:02 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:12:02 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 35
+[04-Aug-2021 13:12:02 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:12:37 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:12:37 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 36
+[04-Aug-2021 13:12:37 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:12:39 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:12:39 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 36
+[04-Aug-2021 13:12:39 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:14:51 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:14:51 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:14:51 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:14:52 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:14:52 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:14:52 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:14:54 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:14:54 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:14:54 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:17:46 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:17:46 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:17:46 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:19:38 Europe/Berlin] Class "system\base\Group" not found
+[04-Aug-2021 13:19:38 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Controller.php - 26
+[04-Aug-2021 13:19:38 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#1 [internal function]: EmployeeController->edit('2')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 13:22:23 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:22:23 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:22:23 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:23:12 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:23:12 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:23:12 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:23:13 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:23:13 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:23:13 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:25:00 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:25:00 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:25:00 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:26:36 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:26:36 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:26:36 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:26:37 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:26:37 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:26:37 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:26:38 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:26:38 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:26:38 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:32:33 Europe/Berlin] Class "system\base\Groups" not found
+[04-Aug-2021 13:32:33 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Controller.php - 26
+[04-Aug-2021 13:32:33 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#1 [internal function]: EmployeeController->edit('2')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 13:33:55 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 13:33:55 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 37
+[04-Aug-2021 13:33:55 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(26): system\base\Model::all()
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}
+[04-Aug-2021 13:35:59 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 13:35:59 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Controller.php - 26
+[04-Aug-2021 13:35:59 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(17): system\base\Controller->render('editEmployee')
+#1 [internal function]: EmployeeController->edit('2')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 14:26:15 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:26:15 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:26:15 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:26:38 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 14:26:38 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 36
+[04-Aug-2021 14:26:38 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\base\Model::all()
+#1 [internal function]: EmployeeController->edit('2')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 14:30:07 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 14:30:07 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 36
+[04-Aug-2021 14:30:07 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\base\Model::all()
+#1 [internal function]: EmployeeController->edit('2')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 14:30:17 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:30:17 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:30:17 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(102): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(32): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(102): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:31:10 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:31:10 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:31:10 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(102): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(32): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(102): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:34:14 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:34:14 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:34:14 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(103): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(33): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(103): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:36:42 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:36:42 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:36:42 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(103): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(33): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(103): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:36:43 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:36:43 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:36:43 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(103): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(33): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(103): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:37:34 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:37:34 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:37:34 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(103): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(33): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(103): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:39:22 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:39:22 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:39:22 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(34): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:39:32 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:39:32 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:39:32 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:40:01 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:40:01 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:40:01 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:40:05 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:40:05 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:40:05 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:40:11 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:40:11 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:40:11 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:40:16 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:40:16 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:40:16 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:41:11 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:41:11 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:41:11 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:42:25 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:42:25 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:42:25 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:42:42 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:42:42 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:42:42 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:43:43 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:43:43 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:43:43 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:44:17 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:44:17 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:44:17 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:45:00 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:45:00 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:45:00 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:45:49 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:45:49 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:45:49 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:46:11 Europe/Berlin] Class "Group" not found
+[04-Aug-2021 14:46:11 Europe/Berlin] C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php - 11
+[04-Aug-2021 14:46:11 Europe/Berlin] #0 [internal function]: EmployeeController->edit('2')
+#1 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#2 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#3 {main}
+[04-Aug-2021 14:46:45 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:46:45 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:46:45 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(106): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(36): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(106): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:47:25 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:47:25 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:47:25 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(106): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(36): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(106): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:47:59 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:47:59 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:47:59 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(34): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:48:24 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:48:24 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:48:24 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(34): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:48:50 Europe/Berlin] syntax error, unexpected identifier "get_class"
+[04-Aug-2021 14:48:50 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 34
+[04-Aug-2021 14:48:50 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeBase('system\\base\\Mod...')
+#1 C:\xampp8\htdocs\intranet\app\models\Group.php(4): system\handlers\LoadHandler::autoLoad('system\\base\\Mod...')
+#2 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(34): include('C:\\xampp8\\htdoc...')
+#3 C:\xampp8\htdocs\intranet\system\handlers\LoadHandler.php(104): system\handlers\LoadHandler::includeModel('Group')
+#4 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\handlers\LoadHandler::autoLoad('Group')
+#5 [internal function]: EmployeeController->edit('2')
+#6 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#7 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#8 {main}
+[04-Aug-2021 14:49:10 Europe/Berlin] Class name must be a valid object or a string
+[04-Aug-2021 14:49:10 Europe/Berlin] C:\xampp8\htdocs\intranet\system\base\Model.php - 35
+[04-Aug-2021 14:49:10 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(11): system\base\Model::all()
+#1 [internal function]: EmployeeController->edit('2')
+#2 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#3 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#4 {main}
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp8\htdocs\intranet\system\helpers\object.php on line 8
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php on line 16
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 16
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 16
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 23
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 23
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "first_name" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 73
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "surname" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 78
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "email" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 83
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "contact_number" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 88
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "start_date" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 93
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "active" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 98
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "active" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 98
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "employee_code" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 103
+[04-Aug-2021 14:54:34 Europe/Berlin] PHP Warning:  Attempt to read property "id" on null in C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php on line 123
+[04-Aug-2021 15:00:36 Europe/Berlin] syntax error, unexpected token "="
+[04-Aug-2021 15:00:36 Europe/Berlin] C:\xampp8\htdocs\intranet\app\views\cache\editEmployee.php - 112
+[04-Aug-2021 15:00:36 Europe/Berlin] #0 C:\xampp8\htdocs\intranet\system\base\Controller.php(27): system\base\View::render('editEmployee', Array)
+#1 C:\xampp8\htdocs\intranet\app\controllers\EmployeeController.php(19): system\base\Controller->render('editEmployee')
+#2 [internal function]: EmployeeController->edit('2')
+#3 C:\xampp8\htdocs\intranet\system\base\Application.php(29): call_user_func_array(Array, Array)
+#4 C:\xampp8\htdocs\intranet\index.php(19): system\base\Application->handleRequest('main')
+#5 {main}

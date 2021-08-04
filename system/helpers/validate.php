@@ -1,6 +1,12 @@
 <?php
 class validate {
-    
+    function __invoke() {
+
+    }
+
+    public static function input() {
+
+    }
 }
 function validate($rules,$input) {
     

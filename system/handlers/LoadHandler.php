@@ -27,7 +27,9 @@ class LoadHandler {
     }
 
     private static function includeModel($include) {
-        $path = env('app.models.path').str_replace('\\',DS,$include).'.php';
+        $path = str_replace('\\\\',DS,str_replace('\\',DS,env('app.models.path')).str_replace('\\',DS,$include).'.php');
+        
+        
         if (file_exists($path)) {
             return include $path;
         }
@@ -87,6 +89,9 @@ class LoadHandler {
      * @return bool|null
      */
     public static function autoLoad($include) {
+        if (strpos($include,'Group')){
+           // pd($include);
+        }
         self::$callingClass = getCallingClass();
         self::$sessionExists = isset($_SESSION);
         self::$errorMessage = [];

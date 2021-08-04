@@ -2,11 +2,12 @@
 namespace system\extensions;
 
 class DB {
+    public static $instance;
     protected $connection;
 	protected $query;
-    protected $show_errors = true;
-    protected $query_closed = true;
-	public $query_count = 0;
+    protected $showErrors = true;
+    protected $queryClosed = true;
+	public $queryCount = 0;
 
     /**
      * DB Construct function
@@ -23,6 +24,13 @@ class DB {
 		$this->connection->set_charset(env('db.'.$conn.'.charset'));
 	}
 
+    public static function getInstance($conn = 'default') {
+        if (!isset(static::$instance)) {
+            static::$instance = new static($conn);
+        }
+        return static::$instance;
+    }
+
     /**
      * query function
      * 
@@ -33,7 +41,7 @@ class DB {
      * @return DB
      */
     public function query($query) {
-        if (!$this->query_closed) {
+        if (!$this->queryClosed) {
             $this->query->close();
         }
         // Prepares a sql statement, 1st stop to avoid sql injection
@@ -66,8 +74,8 @@ class DB {
            	if ($this->query->errno) {
 				$this->error('Unable to process MySQL query (check your params) - ' . $this->query->error);
            	}
-            $this->query_closed = false;
-			$this->query_count++;
+            $this->queryClosed = false;
+			$this->queryCount++;
         } else {
             $this->error('Unable to prepare MySQL statement (check your syntax) - ' . $this->connection->error);
         }
@@ -103,7 +111,7 @@ class DB {
             }
         }
         $this->query->close();
-        $this->query_closed = true;
+        $this->queryClosed = true;
 		return $result;
 	}
 
@@ -135,7 +143,7 @@ class DB {
             }
         }
         $this->query->close();
-        $this->query_closed = true;
+        $this->queryClosed = true;
         return $result;
     }
 
@@ -159,7 +167,7 @@ class DB {
 			}
 		}
         $this->query->close();
-        $this->query_closed = true;
+        $this->queryClosed = true;
 		return $result;
 	}
 
@@ -183,7 +191,7 @@ class DB {
             }
         }
         $this->query->close();
-        $this->query_closed = true;
+        $this->queryClosed = true;
         return $result;
     }
 
@@ -231,7 +239,7 @@ class DB {
      * @return void
      */
     public function error($error) {
-        if ($this->show_errors) {
+        if ($this->showErrors) {
             exit($error);
         }
     }
