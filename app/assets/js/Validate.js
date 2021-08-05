@@ -5,26 +5,23 @@ export class Validate {
         return re.test(email);
     };
     
-    static isRequired = value => value === '' ? false : true
+    static isRequired = value => value === '' ? false : true;
 
-    constructor() 
-    }
-
-    checkEmail(emailEl) {
+    static checkEmail(emailEl) {
         let valid = false;
         const email = emailEl.value.trim();
         if (!Validate.isRequired(email)) {
-            showError(emailEl, 'Email cannot be blank.');
-        } else if (!isEmailValid(email)) {
-            showError(emailEl, 'Email is not valid.')
+            Validate.showError(emailEl, 'Email cannot be blank.');
+        } else if (!Validate.isEmailValid(email)) {
+            Validate.showError(emailEl, 'Email is not valid.')
         } else {
-            showSuccess(emailEl);
+            Validate.showSuccess(emailEl);
             valid = true;
         }
         return valid;
     };
 
-    showError(input, message) {
+    static showError(input, message) {
         // get the form-field element
         const formField = input.parentElement;
         // add the error class
@@ -36,7 +33,7 @@ export class Validate {
         error.textContent = message;
     };
 
-    showSuccess(input) {
+    static showSuccess(input) {
         // get the form-field element
         const formField = input.parentElement;
     

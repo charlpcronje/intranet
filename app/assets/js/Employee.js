@@ -5,47 +5,48 @@ import { ready } from './Dom.js'
 import { Validate } from './Validate.js'
 
 
-(($,c,debug)=>{
-    function init() {
-        debug(true);
-        const fields = {
-            first_name      : $('#first_name'),
-            surname         : $('#surname'),
-            email           : $('#email'),
-            contact_number  : $('#contact_number'),
-            start_date      : $('#start_date'),
-            active          : $('#active'),
-            employee_code   : $('#employee_code'),
-            group_id        : $('#group_id'),
-            id              : $('#id')
+!(function($,c,debug) {
+    class Employee {
+        form = $('#employee_form');
+        fields = {
+            firstName        : $('#first_name'),
+            surname          : $('#surname'),
+            email            : $('#email'),
+            contactNumber    : $('#contact_number'),
+            startDate        : $('#start_date'),
+            active           : $('#active'),
+            employeeCode     : $('#employee_code'),
+            id               : $('#id'),
+            empGroups        : $('#employee_groups')
         }
-        const form = $('#employee_form');
-        form.addEventListener('submit', validateForm);
-
-        function validateForm(event) {
-            event.preventDefault();
-            let valid = true;
-            const vali  = new Validate();
-            if (!vali.checkEmail(fields.email)) {
-                valid = false;
-            }
-            
-            if (valid) {
-                if (confirm('Are You Sure you want to submit in inactive employee?')){
-                    return true;
-                }else{
-                    return false;
+        formValid = true;
+        constructor() {
+            debug(true);
+            this.validateForm();
+        } 
+         
+        validateForm() {
+            const self = this;
+            this.form.addEventListener('submit',(e) => {
+                e.preventDefault();
+                if (!Validate.checkEmail(self.fields.email)) {
+                    self.formValid = false;
                 }
-            }
+                
+                if (!self.fields.active.checked) {
+                    if (confirm('Are You Sure you want to submit in inactive employee?')){
+                        if (self.formValid) this.form.submit();
+                    }else{
+                        return false;
+                    }
+                }
+                if (self.formValid) this.form.submit();
+                
+            });
         }
-
-        var mySelect = new MSelect(
-            document.querySelector('#employee_groups'), {
-                appendTo: '#SelectContainer',
-                width:250,
-                height:130
-            }
-        );
+    }
+    function init() {
+        new Employee();
     }
     ready(init);
-})(selector,c,debug);
+}(selector,c,debug));
