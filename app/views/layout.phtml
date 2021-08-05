@@ -27,22 +27,16 @@
     <nav class="admin__nav">
         <ul class="menu">
         <li class="menu__item">
-            <a class="menu__link" href="#">Dashboard</a>
+            <a class="menu__link" href="//<?=env('app.host')?>/<?=env('app.name')?>"">Dashboard</a>
         </li>
         <li class="menu__item">
-            <a class="menu__link" href="employee/view">Employees</a>
+            <a class="menu__link" href="//<?=env('app.host')?>/<?=env('app.name')?>/employee/view">Employees</a>
         </li>
         <li class="menu__item">
-            <a class="menu__link" href="group/view">Groups</a>
+            <a class="menu__link" href="//<?=env('app.host')?>/<?=env('app.name')?>/logserror.log">Error Logs</a>
         </li>
         <li class="menu__item">
-            <a class="menu__link" href="#">Frontend</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="#">Backend</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="#">Error Logs</a>
+            <a class="menu__link" href="//<?=env('app.host')?>/<?=env('app.name')?>/README.md">README.md</a>
         </li>
         </ul>
     </nav>

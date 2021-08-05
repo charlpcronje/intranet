@@ -14,6 +14,15 @@ class Employee extends Model {
         parent::__construct($id);
     }
 
+    public static function save($data,$model = null) {
+        if (!isset($data['active']) || empty($data['active'])) {
+            $data['active'] = '0';
+        } 
+        EmployeeGroup::save($data['employee_groups'] ?? []);
+        unset($data['employee_groups']);
+        parent::save($data);
+    }
+
     public function count() {
         return count($this->items);
     }

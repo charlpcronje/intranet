@@ -58,14 +58,40 @@ class Model implements IteratorAggregate {
         return null;
     }
 
-    public static function save($input) {
-        $model = new static();
+    public static function delete($data,$model = null) {
+        if (!isset($model)) {
+            $model = new static();
+        }
+        $stmt = $model->db::prepare($model->sql->delete);
+        $data = $model->db::colonize($data);
+        if ($stmt->execute($data)) {
+            return true;
+        }
+        return false;
+    }
+
+    public static function insert($data,$model = null) {
+        if (!isset($model)) {
+            $model = new static();
+        }
+        $stmt = $model->db::prepare($model->sql->insert);
+        $data = $model->db::colonize($data);
+        if ($stmt->execute($data)) {
+            return true;
+        }
+        return false;
+    }
+
+
+    public static function save($input,$model = null) {
+        if (!isset($model)) {
+            $model = new static();
+        }
         $validated = validate($model->validate,$input);
         if (!$validated['status']) {
             return $validated;
         }
-        $input = post();
-        unset($input['employee_groups']);
+        
         $stmt = $model->db::prepare($model->sql->update);
         $input = $model->db::colonize($input);
       

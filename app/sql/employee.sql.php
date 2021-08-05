@@ -40,11 +40,11 @@ return (object)[
             employee_groups.group_id
         FROM
             employee
-            INNER JOIN
+            LEFT JOIN
             employee_groups
             ON 
                 employee.id = employee_groups.employee_id
-            INNER JOIN
+            LEFT JOIN
             groups
             ON 
                 employee_groups.group_id = groups.id

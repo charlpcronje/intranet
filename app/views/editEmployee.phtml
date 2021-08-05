@@ -52,7 +52,7 @@
         <div id="MSelectContainer">
             <select id="employee_groups"  class="form-control" name="employee_groups[]" multiple="multiple">
             {% foreach($groups as $group): %}
-                <option value="1" {% if (isset($employee->groups[$group->id])):%} selected="selected"{% endif %} >{{ $group->group_name }}</option>
+                <option value="{{ $group->id }}" {% if (isset($employee->groups[$group->id])):%} selected="selected"{% endif %} >{{ $group->group_name }}</option>
             {% endforeach; %}
             </select>
         </div>
