@@ -4,6 +4,17 @@
 URL to intranet: `https://172.29.0.29/intranet/`
 Path to Intranet: `\\172.29.0.29\www\html\intranet`
 
+## SETUP FOR DB: 
+Open .env file and scroll to the bottom. The following settings are available there:
+
+```conf
+# DB CONNECTION - Default
+db.default.host=localhost
+db.default.username=root
+db.default.password=
+db.default.dbname=intranet
+db.default.charset=UTF8
+```
 
 ## Code Lifecycle
 The entire `MVC` system runs in the `system` namespace. Then I created more namespaces within system to be consistent with the folder structure.
